@@ -1,0 +1,35 @@
+.NavBar {
+    
+}
+
+.containerfluid{    
+    display:inline-block;
+    padding-inline: 1cm;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 4rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+nav{
+    background-color: rgb(2, 2, 2);
+    height: 100px;
+}
+
+a {
+    color: rgb(248, 245, 245);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: aqua;
+}

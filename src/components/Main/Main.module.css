@@ -1,0 +1,92 @@
+.Main {
+    height: 100%;
+    justify-content: space-between;
+    background: radial-gradient(ellipse at bottom, #8e9292 0%,#242424 100%);
+}
+
+
+p{
+    margin-top: auto;
+    margin-bottom: -3rem;
+}
+
+img{
+    margin-left: 6cm;
+}
+
+.f {
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: rgb(127, 241, 245);
+    text-shadow: 5px 5px 5px red,
+               3px 3px 3px red;
+
+
+    align-self: flex-end;
+    animation-duration: 2s;
+    margin-left: 3cm;           
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14ch;
+    font-weight: bolder;  
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: scale(1,1)    translateY(-1000px); }
+    10%  { transform: scale(1.1,.7) translateY(0); }
+    30%  { transform: scale(.7,1.1) translateY(-200px); }
+    50%  { transform: scale(1.1,.7)    translateY(-50px); }
+    57%  { transform: scale(1,1)    translateY(0px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+.s {
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: rgb(127, 241, 245);
+    text-shadow: 5px 5px 5px red,
+               3px 3px 3px red;
+
+    
+    align-self: flex-end;
+    animation-duration: 2s;
+    margin-left: 3cm;           
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14ch;
+    font-weight: bolder;  
+    animation-name: bounce-5;
+    animation-timing-function: linear;
+    
+}
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(-1000px); }
+    10%  { transform: scale(1.1,.7) translateY(0); }
+    30%  { transform: scale(.7,1.1) translateY(-200px); }
+    50%  { transform: scale(1.1,.7)    translateY(-50px); }
+    57%  { transform: scale(1,1)    translateY(-30px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+.t {
+    margin-top: 1cm;
+    align-self: flex-end;
+    animation-duration: 2s;
+    margin-left: 3cm;           
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3ch;
+    font-weight: bolder;  
+    animation-name: slidein;
+    animation-timing-function: linear;
+    
+}
+@keyframes slidein {
+    from {
+      margin-left: 40%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 100%;
+    }
+  }
