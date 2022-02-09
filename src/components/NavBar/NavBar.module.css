@@ -4,15 +4,16 @@
 
 .containerfluid{    
     display:inline-block;
-    padding-inline: 1cm;
+    padding-inline: -0.5cm;
     justify-content: space-around;
+    
 }
 
 .navbar {
     display: inline-block;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    margin-right: 4rem;
+    margin-right: 2rem;
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
@@ -21,15 +22,21 @@
 
 nav{
     background-color: rgb(2, 2, 2);
-    height: 100px;
+    height: 90px;
 }
 
-a {
+.navbar {
     color: rgb(248, 245, 245);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
+    border-radius: 25px;
+    padding: 20px 20px;
 }
 
-a:hover{
-    background-color: aqua;
+.navbar:hover{
+    color: #000;
+    background-color: rgb(252, 252, 252);
+    text-decoration: none;
+    padding: 13px 20px;
 }
+
