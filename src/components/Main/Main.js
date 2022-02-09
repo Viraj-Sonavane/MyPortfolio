@@ -5,7 +5,7 @@ import house from "../../Images/myname.jpg";
 
 const Main = () => (
   <div className={styles.Main}>
-    <section>
+    <div className={styles.container}>
       <div className={styles.stars}></div>
       <div className={styles.stars1}></div>
       <div className={styles.stars2}></div>
@@ -21,10 +21,16 @@ const Main = () => (
           </p>
         </div>
         <div class="col-sm-4">
-          <img className={styles.imageMain} src={house} alt="Myname" width={425} height={600} />
+          <img
+            className={styles.imageMain}
+            src={house}
+            alt="Myname"
+            width={425}
+            height={600}
+          />
         </div>
       </div>
-    </section>
+    </div>
   </div>
 );
 
