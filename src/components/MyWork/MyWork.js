@@ -5,9 +5,20 @@ import W1 from "../../Images/W1.png";
 import W2 from "../../Images/W2.png";
 import W3 from "../../Images/W3.png";
 import W4 from "../../Images/W4.png";
-
-import house from "../../Images/logo512.png";
-import house2 from "../../Images/myname.jpg";
+import S1 from "../../Images/S1.png";
+import S2 from "../../Images/S2.png";
+import S3 from "../../Images/S3.png";
+import S4 from "../../Images/S4.png";
+import T1 from "../../Images/T1.png";
+import T2 from "../../Images/T2.png";
+import T3 from "../../Images/T3.png";
+import T4 from "../../Images/T4.png";
+import T5 from "../../Images/T5.png";
+import T6 from "../../Images/T6.png";
+import N1 from "../../Images/N1.png";
+import N2 from "../../Images/N2.png";
+import N3 from "../../Images/N3.png";
+import N4 from "../../Images/N4.png";
 
 const MyWork = () => (
   <div className={styles.MyWork}>
@@ -27,7 +38,7 @@ const MyWork = () => (
       <br />
 
       <div class="card-group">
-        <div class="card">
+        <div className="card">
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
@@ -35,37 +46,37 @@ const MyWork = () => (
           >
             <div className={styles.carouselinner}>
               <a
-                href="https://www.linkedin.com/in/viraj-sonavane-aa7841177/"
+                href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
               >
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W1}
+                    src={S3}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500" >
                   <img
                     className={styles.images}
-                    src={W2}
+                    src={S1}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500" >
                   <img
                     className={styles.images}
-                    src={W3}
+                    src={S2}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500" >
                   <img
                     className={styles.images}
-                    src={W4}
+                    src={S4}
                     class="d-block w-100"
                     alt="..."
                   ></img>
@@ -85,7 +96,15 @@ const MyWork = () => (
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
               >
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="2500">
+                  <img
+                    className={styles.images}
+                    src={W1}
+                    class="d-block w-100"
+                    alt="..."
+                  ></img>
+                </div>
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={W3}
@@ -93,7 +112,7 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={W2}
@@ -101,7 +120,7 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={W4}
@@ -124,29 +143,37 @@ const MyWork = () => (
           >
             <div className={styles.carouselinner}>
               <a
-                href="https://csci620-team1-ui.azurewebsites.net"
+                href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
               >
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W4}
+                    src={N3}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W2}
+                    src={N2}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W1}
+                    src={N1}
+                    class="d-block w-100"
+                    alt="..."
+                  ></img>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                  <img
+                    className={styles.images}
+                    src={N4}
                     class="d-block w-100"
                     alt="..."
                   ></img>
@@ -163,29 +190,53 @@ const MyWork = () => (
           >
             <div className={styles.carouselinner}>
               <a
-                href="https://csci620-team1-ui.azurewebsites.net"
+                href=""
                 target="_blank"
               >
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W4}
+                    src={T1}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W1}
+                    src={T2}
                     class="d-block w-100"
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
-                    src={W3}
+                    src={T3}
+                    class="d-block w-100"
+                    alt="..."
+                  ></img>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                  <img
+                    className={styles.images}
+                    src={T4}
+                    class="d-block w-100"
+                    alt="..."
+                  ></img>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                  <img
+                    className={styles.images}
+                    src={T5}
+                    class="d-block w-100"
+                    alt="..."
+                  ></img>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                  <img
+                    className={styles.images}
+                    src={T6}
                     class="d-block w-100"
                     alt="..."
                   ></img>
