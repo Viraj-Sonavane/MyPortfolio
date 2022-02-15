@@ -1,5 +1,11 @@
-
-html {
-    background-color: rgb(118, 121, 122);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.sidebar{
+    background-color:rgb(10, 10, 10);
+    color: white;
+    height: 100vh;
+}

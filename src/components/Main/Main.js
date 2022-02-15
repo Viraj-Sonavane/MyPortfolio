@@ -10,7 +10,7 @@ const Main = () => (
       <div className={styles.stars1}></div>
       <div className={styles.stars2}></div>
       <div className="row">
-        <div class="col-sm-7">
+        <div class="col-sm-6">
           <p className={styles.f}>Hi, I'm Viraj. </p>
           <p className={styles.s}>A Designer.</p>
           <br />
@@ -20,14 +20,11 @@ const Main = () => (
             for creating engaging UI, bringing products to life.
           </p>
         </div>
+        <div class="col-sm-2">
+
+        </div>
         <div class="col-sm-4">
-          <img
-            className={styles.imageMain}
-            src={house}
-            alt="Myname"
-            width={425}
-            height={600}
-          />
+          <img className={styles.imageMain} src={house} alt="Myname" width={425} height={600} />
         </div>
       </div>
     </div>

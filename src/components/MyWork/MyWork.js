@@ -43,6 +43,8 @@ const MyWork = () => (
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
+            pause="hover"
+            data-toggle="tooltip" data-placement="top" title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -90,6 +92,8 @@ const MyWork = () => (
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
+            pause="hover"
+            data-toggle="tooltip" data-placement="top" title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -140,6 +144,8 @@ const MyWork = () => (
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
+            pause="hover"
+            data-toggle="tooltip" data-placement="top" title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -187,6 +193,9 @@ const MyWork = () => (
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
+            pause="hover"
+            data-toggle="tooltip" data-placement="top" title="Click to open"
+
           >
             <div className={styles.carouselinner}>
               <a
@@ -246,6 +255,9 @@ const MyWork = () => (
           </div>
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
     </div>
   </div>
 );

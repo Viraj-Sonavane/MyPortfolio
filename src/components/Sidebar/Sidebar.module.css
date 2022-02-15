@@ -1,5 +1,10 @@
-.Sidebar {
-    
+.Sidebars {
+    display: flex;
+}
+
+main{
+   height: fit-content;
+   width: 100%;
 }
 
 .floatsmleft{
@@ -15,3 +20,56 @@
     font-weight: bold;
     border-radius: 25px;
 }
+
+.spann{
+    color: aliceblue;
+}
+
+.sidebar{
+    background-color:rgb(10, 10, 10);
+    color: white;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    font-size: 35px;
+    line-height: 0;
+    padding-bottom: 10px;
+}
+
+.link{
+    font-size: 20px ;
+    display: flex;
+    color: aliceblue;
+    gap: 20px;
+    border: none;
+    padding: 15px 15px;
+}
+
+
+.link:hover{
+    border-right: 4px solid rgb(75, 240, 240);
+    background-color: rgb(223, 233, 235);
+}
+
+.active{
+    border-right: 4px solid white;
+    background-color: rgb(223, 233, 235);
+}
+
+.linktext{
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
