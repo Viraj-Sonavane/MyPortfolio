@@ -3,41 +3,45 @@
 }
 
 .container{
-    margin-top: 150px;
+    margin-left: 60px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
 }
 
+.data{
+    font-size: 2rem;
+}
+
 .aligned1{
     color: aqua;
-    font-size: 2.5vw;
-    padding-left: 1.5rem;
-    padding-top: 4rem;
+    font-size: 1vw;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
 }
 
 .aligned2{
     color: aqua;
-    font-size: 2.5vw;
-    padding-left: 2rem;
-    padding-top: 4rem;
+    font-size: 1vw;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
 }
 .aligned3{
     color: aqua;
-    font-size: 2.5vw;
-    padding-left: 4rem;
-    padding-top: 4rem;
+    font-size: 1vw;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
 }
 .aligned4{
     color: aqua;
-    font-size: 2.5vw;
-    padding-left: 4rem;
-    padding-top: 4rem;
+    font-size: 1vw;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .content{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: auto;
     transform-style: preserve-3d;
     transition: transform 0.2s ease-in;
@@ -52,7 +56,6 @@
     }
 }
 
-
 .content>div{
     position: absolute;
     width: 100%;
@@ -65,26 +68,26 @@
 
 
 .front{
-    transform: translateZ(100px);
+    transform: translateZ(150px);
     transform-origin: center top;
 }
 
 .back{
-    transform: translateZ(-100px) rotateY(180deg);
+    transform: translateZ(-150px) rotateY(180deg);
 }
 
 .left{
-    transform: rotateY(270deg) translateX(-100px);
+    transform: rotateY(270deg) translateX(-150px);
     transform-origin: center left;
 }
 
 .right{
-    transform: rotateY(-270deg) translateX(100px);
+    transform: rotateY(-270deg) translateX(150px);
     transform-origin: top right;
 }
 
 .top{
-    transform: rotateX(-270deg) translateY(-100px);
+    transform: rotateX(-270deg) translateY(-150px);
     transform-origin: right top;   
 }
 

@@ -19,6 +19,7 @@ import N1 from "../../Images/N1.png";
 import N2 from "../../Images/N2.png";
 import N3 from "../../Images/N3.png";
 import N4 from "../../Images/N4.png";
+import { motion } from "framer-motion";
 
 const MyWork = () => (
   <div className={styles.MyWork}>
@@ -28,23 +29,43 @@ const MyWork = () => (
         <br />
         <h1>My Porfolio</h1>
         <br />
-        <h2>
-          A small gallery of recent projects chosen by me. I've done them all
-          together with amazing people from companies around the globe. It's
-          only a drop in the ocean compared to the entire list.
-        </h2>
+        <div className="row">
+          <div class="col-sm-10">
+            <h2>
+              A small gallery of recent projects chosen by me. I've done them
+              all together with amazing people from companies around the globe.
+              It's only a drop in the ocean compared to the entire list.
+            </h2>
+          </div>
+          <div class="col-sm-2">
+            <motion.button
+              className={styles.lbutton}
+              whileHover={{ scale: 1.1 }}
+              href="/MySkill"
+            >
+              Learn More
+            </motion.button>
+          </div>
+        </div>
       </div>
       <br />
       <br />
-
       <div class="card-group">
-        <div className="card">
+        <motion.div
+          whileHover={{
+            scale: 0.98,
+            transition: { duration: 0.5 },
+          }}
+          className="card"
+        >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
             pause="hover"
-            data-toggle="tooltip" data-placement="top" title="Click to open"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -59,7 +80,7 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item" data-interval="2500" >
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={S1}
@@ -67,7 +88,7 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item" data-interval="2500" >
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={S2}
@@ -75,7 +96,7 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
-                <div class="carousel-item" data-interval="2500" >
+                <div class="carousel-item" data-interval="2500">
                   <img
                     className={styles.images}
                     src={S4}
@@ -86,14 +107,22 @@ const MyWork = () => (
               </a>
             </div>
           </div>
-        </div>
-        <div class="card">
+        </motion.div>
+        <motion.div
+          whileHover={{
+            scale: 0.98,
+            transition: { duration: 0.5 },
+          }}
+          class="card"
+        >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
             pause="hover"
-            data-toggle="tooltip" data-placement="top" title="Click to open"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -135,17 +164,25 @@ const MyWork = () => (
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div class="card-group">
-        <div class="card">
+        <motion.div
+          whileHover={{
+            scale: 0.98,
+            transition: { duration: 0.5 },
+          }}
+          class="card"
+        >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
             pause="hover"
-            data-toggle="tooltip" data-placement="top" title="Click to open"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Click to open"
           >
             <div className={styles.carouselinner}>
               <a
@@ -187,21 +224,25 @@ const MyWork = () => (
               </a>
             </div>
           </div>
-        </div>
-        <div class="card">
+        </motion.div>
+        <motion.div
+          whileHover={{
+            scale: 0.98,
+            transition: { duration: 0.5 },
+          }}
+          class="card"
+        >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
             pause="hover"
-            data-toggle="tooltip" data-placement="top" title="Click to open"
-
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Click to open"
           >
             <div className={styles.carouselinner}>
-              <a
-                href=""
-                target="_blank"
-              >
+              <a href="" target="_blank">
                 <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
@@ -253,11 +294,11 @@ const MyWork = () => (
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
     </div>
   </div>
 );

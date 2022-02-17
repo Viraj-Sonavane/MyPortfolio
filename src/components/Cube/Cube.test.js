@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MySkills from './MySkills';
+import Cube from './Cube';
 
 it('It should mount', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<MySkills />, div);
+  ReactDOM.render(<Cube />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

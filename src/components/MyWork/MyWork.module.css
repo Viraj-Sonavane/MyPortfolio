@@ -2,23 +2,51 @@
     
 }
 
+.lbutton{
+    align-items:center;
+  background-color: transparent;
+  color: #a7a9a9;
+  border: 3px solid rgb(243, 246, 247);
+  border-radius: 25px;
+  padding: 0px 20px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #5feef3;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.lbutton:hover{
+    border: 3px solid rgb(129, 247, 255);
+    box-shadow: inset 0 0 0 50px #faf8f8;
+    color: black;
+
+}
+
+
 h1 {
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: rgb(127, 241, 245);
-    color: aliceblue;
+    color: rgb(118, 250, 250);
     align-self: flex-end;   
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5ch;
+    font-size: 5vw;
     font-weight: bolder;  
 }
  h1:hover{
-     color: rgb(15, 15, 15);
+     color: rgb(0, 0, 0);
  }
 
 
 h2{
-    color: aliceblue;
+    color: #020202;
     font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 h5{
