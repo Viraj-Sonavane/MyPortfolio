@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Sidebar.module.css";
-import { AnimatePresence, m, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { BsFillHouseFill, BsFillChatRightQuoteFill,BsGithub,BsLinkedin,BsInfoCircleFill,BsFillPersonLinesFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-
+import {IoDocumentAttachOutline,} from "react-icons/io5"
 
 const routes = [
   {
@@ -24,21 +24,27 @@ const routes = [
     icons: <BsFillPersonLinesFill />,
   },
   {
+    path: "/Resume",
+    name: "Resume",
+    icons: <IoDocumentAttachOutline />,
+    target:""
+  },
+  {
     path: "/Contact",
     name: "Contact",
     icons: <BsFillChatRightQuoteFill />,
   },
   {
-    path: "/https://github.com/Viraj-Sonavane",
+    path: "/",
     name: "GitHub",
     icons: <BsGithub />,
-    target:""
+    target:"_blank",
   },
   {
     path: "/https://www.linkedin.com/in/viraj-sonavane-aa7841177/",
     name: "LikedIn",
     icons: <BsLinkedin />,
-    target:""
+    target:"_blank"
   },
 ];
 
@@ -72,8 +78,8 @@ const Sidebar = ({ children }) => {
       } }} className={styles.sidebar} onHoverEnd={toggle} onHoverStart={toggle}>
         <section className="routes">
           {routes.map((route) => (
-            <NavLink activeClassName={styles.active}  className={styles.link} to={route.path} key={route.name} >
-                <div className={styles.logo}>{route.icons} </div>
+            <NavLink activeClassName={styles.active}  className={styles.link} to={route.path} key={route.name} target={route.target} component={() => { window.location = 'https://github.com'; return null;} }>
+              <div className={styles.logo}>{route.icons} </div>
               <AnimatePresence>
                 {isOpen && <motion.div variant={showAnimation} 
                 initial = "hidden"
@@ -85,7 +91,7 @@ const Sidebar = ({ children }) => {
           ))}
         </section>
       </motion.div>
-      <main>{children}</main>
+      <main className={styles.mains}>{children}</main>
     </div>
   );
 };

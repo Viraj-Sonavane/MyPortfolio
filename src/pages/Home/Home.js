@@ -5,7 +5,7 @@ import house from "../../Images/myname.jpg";
 import { motion } from "framer-motion";
 import MyWork from "../../components/MyWork/MyWork";
 import { CgScrollV } from "react-icons/cg";
-import NavBar from "../../components/NavBar/NavBar";
+import MySkills from "../../components/MySkills/MySkills";
 const Home = () => (
   <div className={styles.Home}>
     <div className={styles.container}>
@@ -97,7 +97,7 @@ const Home = () => (
       </section>
        
       <section>
-        <NavBar/>
+        <MySkills/>
       </section>
     </div>
   </div>

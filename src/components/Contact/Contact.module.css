@@ -1,0 +1,5 @@
+.Contact {
+    height: 100%;
+    justify-content: space-between;
+    background: radial-gradient(ellipse at bottom, #b4b8b8 0%,#0c0c0c 100%);
+}
