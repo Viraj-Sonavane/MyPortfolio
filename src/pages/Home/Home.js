@@ -25,7 +25,7 @@ const Home = () => (
             <motion.p
               initial={{ x: 400 }}
               animate={{
-                x: 10,
+                x: 0,
                 transition: {
                   duration: 4,
                   type: "spring",
@@ -37,6 +37,23 @@ const Home = () => (
               I’m a front-end developer and general doodler with a keen eye for
               creating engaging UI, bringing products to life.
             </motion.p>
+            <br/>
+            <br/>
+            <a href="/Contact">
+            <motion.button
+              className={styles.mbutton}
+              whileHover={{ scale: 1.1 }}
+              animate={{ rotate: 360 }}
+              transition={{
+                type: "spring",
+                damping: 3,
+                duration: 4,
+              }}
+              href="/Contact"
+            >
+              Contact Me!
+            </motion.button>
+          </a>
           </div>
           <div class="col-sm-4">
             <br />
@@ -66,23 +83,7 @@ const Home = () => (
         </div>
         <br />
         <br />
-        <div className={styles.row2}>
-          <a href="/Contact">
-            <motion.button
-              className={styles.mbutton}
-              whileHover={{ scale: 1.1 }}
-              animate={{ rotate: 360 }}
-              transition={{
-                type: "spring",
-                damping: 3,
-                duration: 4,
-              }}
-              href="/Contact"
-            >
-              Contact Me!
-            </motion.button>
-          </a>
-        </div>
+        
         <motion.div className={styles.scroll}>
           <CgScrollV />
         </motion.div>
