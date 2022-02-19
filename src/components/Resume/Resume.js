@@ -17,7 +17,7 @@ const Resume = () => (
             <h1 className={styles.header}>MyResume</h1>
           </div>
           <div className="col-sm-3">
-          <a href={require("../../PDF/Viraj_Sonavane.pdf")} download="V">
+          <a href={require("../../PDF/Viraj_Sonavane.pdf")} download="Viraj_Sonavane_Resume">
             <button
               className={styles.buttons}
               whileHover={{ scale: 0.9 }}
@@ -32,13 +32,11 @@ const Resume = () => (
     </div>
 
     <div className="container-fluid">
-    
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.min.js">
         <Viewer
           theme={{
             theme: "dark",
           }}
-         className={styles.View}
           fileUrl={pdf}
         ></Viewer>
       </Worker>

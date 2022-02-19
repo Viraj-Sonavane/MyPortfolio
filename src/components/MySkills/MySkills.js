@@ -2,16 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./MySkills.module.css";
 import { motion } from "framer-motion";
-const MySkills = () => (
-  <div className={styles.MySkills}>
-    <div className={styles.container}>
-      <div>
+
+const styless = {
+  backgroundColor: 'transparent'
+};
+
+const MySkills = (props) => {
+  return (
+    <div className={styles.MySkills}>
+      <div class="container-fluid">
         <br />
         <br />
         <h1>My Skills</h1>
-        <br />
-        <div className="row">
-          <div class="col-sm-6">
+        <div class="card-group" style={{ backgroundColor: 'transparent' }}>
+          <div class="card" style={{ backgroundColor: 'transparent', border: 'none'}} >
             <h2 className={styles.data}>
               A small gallery of recent projects chosen by me. I've done them
               all together with amazing people from companies around the globe.
@@ -21,7 +25,7 @@ const MySkills = () => (
               only a drop in the ocean compared to the entire list.
             </h2>
           </div>
-          <div class="col-sm-6">
+          <div class="card" style={{ backgroundColor: 'transparent', border: 'none' }}>
             <div className={styles.content}>
               <div className={styles.front}>
                 <p className={styles.aligned1}>HTML5</p>
@@ -44,10 +48,11 @@ const MySkills = () => (
             </div>
           </div>
         </div>
+        <br />
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 MySkills.propTypes = {};
 

@@ -4,8 +4,20 @@
 }
 
 p{
-    margin-top: auto;
-    margin-bottom: -3rem;
+    margin-bottom: 0rem;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.row2{
+    width: 100%;
+}
+
+.row3{
+    width: 100%;
 }
 
 .work{

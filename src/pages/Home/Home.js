@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import MyWork from "../../components/MyWork/MyWork";
 import { CgScrollV } from "react-icons/cg";
 import MySkills from "../../components/MySkills/MySkills";
+
 const Home = () => (
   <div className={styles.Home}>
     <div className={styles.container}>
@@ -13,15 +14,13 @@ const Home = () => (
         <div className={styles.stars}></div>
         <div className={styles.stars1}></div>
         <div className={styles.stars2}></div>
-        <div className="row">
-          <div class="col-sm-7">
+        <div className={styles.row}>
+          <div class="col-sm-8">
             <br />
             <br />
             <p className={styles.f}>Hi,</p>
             <p className={styles.f}>I'm Viraj. </p>
             <p className={styles.s}>A Developer.</p>
-            <br />
-            <br />
             <br />
             <motion.p
               initial={{ x: 400 }}
@@ -39,7 +38,6 @@ const Home = () => (
               creating engaging UI, bringing products to life.
             </motion.p>
           </div>
-          <div class="col-sm-1"></div>
           <div class="col-sm-4">
             <br />
             <br />
@@ -65,26 +63,26 @@ const Home = () => (
               height={600}
             />
           </div>
-          <br />
-          <br />
         </div>
-
-        <a href="/Contact">
-          <motion.button
-            className={styles.mbutton}
-            whileHover={{ scale: 1.1 }}
-            animate={{ rotate: 360 }}
-            transition={{
-              type: "spring",
-              damping: 3,
-              duration: 4,
-            }}
-            href="/Contact"
-          >
-            Contact Me!
-          </motion.button>
-        </a>
-
+        <br />
+        <br />
+        <div className={styles.row2}>
+          <a href="/Contact">
+            <motion.button
+              className={styles.mbutton}
+              whileHover={{ scale: 1.1 }}
+              animate={{ rotate: 360 }}
+              transition={{
+                type: "spring",
+                damping: 3,
+                duration: 4,
+              }}
+              href="/Contact"
+            >
+              Contact Me!
+            </motion.button>
+          </a>
+        </div>
         <motion.div className={styles.scroll}>
           <CgScrollV />
         </motion.div>
@@ -95,9 +93,9 @@ const Home = () => (
           <CgScrollV />
         </motion.div>
       </section>
-       
+
       <section>
-        <MySkills/>
+        <MySkills />
       </section>
     </div>
   </div>

@@ -29,7 +29,7 @@ const MyWork = () => (
         <br />
         <h1>My Porfolio</h1>
         <br />
-        <div className="row">
+        <div className={styles.row4}>
           <div class="col-sm-10">
             <h2>
               A small gallery of recent projects chosen by me. I've done them

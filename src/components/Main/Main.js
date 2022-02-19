@@ -9,7 +9,7 @@ const Main = () => (
       <div className={styles.stars}></div>
       <div className={styles.stars1}></div>
       <div className={styles.stars2}></div>
-      <div className="row">
+      <div className={styles.row}>
         <div class="col-sm-6">
           <p className={styles.f}>Hi, I'm Viraj. </p>
           <p className={styles.s}>A Designer.</p>
