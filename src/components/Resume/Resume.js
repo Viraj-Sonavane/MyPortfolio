@@ -13,7 +13,7 @@ const Resume = () => (
     <div className="container-fluid">
       <div>
         <div className={styles.row}>
-          <div class="col-sm-9">
+          <div class="col-sm-9" style={{paddingLeft:"0px",paddingRight:"0px"}}>
             <h1 className={styles.header}>MyResume</h1>
           </div>
           <div className="col-sm-3">

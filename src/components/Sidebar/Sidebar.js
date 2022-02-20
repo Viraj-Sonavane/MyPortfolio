@@ -19,7 +19,7 @@ const routes = [
     icons: <BsInfoCircleFill />,
   },
   {
-    path: "/MySkills",
+    path: "/skill",
     name: "MySkills",
     icons: <BsFillPersonLinesFill />,
   },

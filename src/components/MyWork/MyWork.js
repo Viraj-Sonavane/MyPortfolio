@@ -20,9 +20,11 @@ import N2 from "../../Images/N2.png";
 import N3 from "../../Images/N3.png";
 import N4 from "../../Images/N4.png";
 import { motion } from "framer-motion";
-
+import { NavLink } from "react-router-dom";
+import { BsGithub } from "react-icons/bs";
+import {IoOpen} from "react-icons/io5";
 const MyWork = () => (
-  <div className={styles.MyWork}>
+  <div className={styles.MyWork} id = "skills">
     <div className={styles.container}>
       <div>
         <br />
@@ -38,13 +40,14 @@ const MyWork = () => (
             </h2>
           </div>
           <div class="col-sm-2">
-            <motion.button
-              className={styles.lbutton}
-              whileHover={{ scale: 1.1 }}
-              href="/MySkill"
-            >
-              Learn More
-            </motion.button>
+            <NavLink to="/MySkills">
+              <motion.button
+                className={styles.lbutton}
+                whileHover={{ scale: 1.1 }}
+              >
+                Learn More
+              </motion.button>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -52,11 +55,8 @@ const MyWork = () => (
       <br />
       <div class="card-group">
         <motion.div
-          whileHover={{
-            scale: 0.98,
-            transition: { duration: 0.5 },
-          }}
           className="card"
+          style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
         >
           <div
             id="carouselExampleFade"
@@ -67,7 +67,11 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <div className={styles.carouselinner}>
+            <motion.div  
+              whileHover={{
+              scale: 0.98,
+              transition: { duration: 0.5 },
+              }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
@@ -105,15 +109,35 @@ const MyWork = () => (
                   ></img>
                 </div>
               </a>
+            </motion.div>
+          </div>
+          <div
+            class="card-body"
+            style={{
+              background: "rgb(35 36 36)",
+              padding: "0.5rem",
+              paddingLeft: "1rem",
+            }}
+          >
+            <div class="row" style={{ width: "100%",display:"flex"}}>
+              <a
+                href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor"
+                target="_blank"
+              >
+                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+              </a>
+              <a
+                href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
+                target="_blank"
+              >
+                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+              </a>
             </div>
           </div>
         </motion.div>
         <motion.div
-          whileHover={{
-            scale: 0.98,
-            transition: { duration: 0.5 },
-          }}
           class="card"
+          style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
         >
           <div
             id="carouselExampleFade"
@@ -124,7 +148,11 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <div className={styles.carouselinner}>
+            <motion.div  
+             whileHover={{
+             scale: 0.98,
+             transition: { duration: 0.5 },
+             }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
@@ -162,6 +190,29 @@ const MyWork = () => (
                   ></img>
                 </div>
               </a>
+            </motion.div>
+          </div>
+          <div
+            class="card-body"
+            style={{
+              background: "rgb(35 36 36)",
+              padding: "0.5rem",
+              paddingLeft: "1rem",
+            }}
+          >
+             <div class="row" style={{ width: "100%",display:"flex"}}>
+              <a
+                href="https://github.com/Viraj-Sonavane/team1"
+                target="_blank"
+              >
+                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+              </a>
+              <a
+                href="https://csci620-team1-ui.azurewebsites.net"
+                target="_blank"
+              >
+                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+              </a>
             </div>
           </div>
         </motion.div>
@@ -169,11 +220,8 @@ const MyWork = () => (
 
       <div class="card-group">
         <motion.div
-          whileHover={{
-            scale: 0.98,
-            transition: { duration: 0.5 },
-          }}
           class="card"
+          style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
         >
           <div
             id="carouselExampleFade"
@@ -184,7 +232,11 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <div className={styles.carouselinner}>
+            <motion.div  
+              whileHover={{
+              scale: 0.98,
+              transition: { duration: 0.5 },
+              }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
@@ -222,15 +274,35 @@ const MyWork = () => (
                   ></img>
                 </div>
               </a>
+            </motion.div>
+          </div>
+          <div
+            class="card-body"
+            style={{
+              background: "rgb(35 36 36)",
+              padding: "0.5rem",
+              paddingLeft: "1rem",
+            }}
+          >
+             <div class="row" style={{ width: "100%",display:"flex"}}>
+              <a
+                href="https://github.com/Viraj-Sonavane/Amplify"
+                target="_blank"
+              >
+                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+              </a>
+              <a
+                href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
+                target="_blank"
+              >
+                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+              </a>
             </div>
           </div>
         </motion.div>
         <motion.div
-          whileHover={{
-            scale: 0.98,
-            transition: { duration: 0.5 },
-          }}
           class="card"
+          style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
         >
           <div
             id="carouselExampleFade"
@@ -241,7 +313,11 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <div className={styles.carouselinner}>
+            <motion.div  
+              whileHover={{
+              scale: 0.98,
+              transition: { duration: 0.5 },
+              }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a href="" target="_blank">
                 <div class="carousel-item active" data-interval="2500">
                   <img
@@ -291,6 +367,29 @@ const MyWork = () => (
                     alt="..."
                   ></img>
                 </div>
+              </a>
+            </motion.div>
+          </div>
+          <div
+            class="card-body"
+            style={{
+              background: "rgb(35 36 36)",
+              padding: "0.5rem",
+              paddingLeft: "1rem",
+            }}
+          >
+             <div class="row" style={{ width: "100%",display:"flex"}}>
+              <a
+                href="https://github.com/CSUChico-CINS465/CINS465-S21-Viraj-Sonavane/tree/Project"
+                target="_blank"
+              >
+                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+              >
+                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
               </a>
             </div>
           </div>

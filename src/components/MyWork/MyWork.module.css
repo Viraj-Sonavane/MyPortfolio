@@ -7,6 +7,9 @@
     display: flex;
 }
 
+.minilogo:hover{
+    color: red;
+}
 
 .lbutton{
 align-items:center;
@@ -61,6 +64,7 @@ h5{
 
 .images{
     margin-left: 0cm;
+    border-radius: 25px;
 }
 
 

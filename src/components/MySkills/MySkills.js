@@ -25,7 +25,7 @@ const MySkills = (props) => {
               only a drop in the ocean compared to the entire list.
             </h2>
           </div>
-          <div class="card" style={{ backgroundColor: 'transparent', border: 'none' }}>
+          <div class="card" style={{ backgroundColor: 'transparent', border: 'none', marginTop:"30px" }}>
             <div className={styles.content}>
               <div className={styles.front}>
                 <p className={styles.aligned1}>HTML5</p>

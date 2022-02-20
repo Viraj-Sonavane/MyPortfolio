@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact"
 import Main from "./components/Main/Main";
+import MySkills from "./components/MySkills/MySkills";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/Contact" element={<Contact/>} />
             <Route path="/Resume" element={<Resume/>} />
+            
           </Routes>
         </Sidebar>
       </Router>

@@ -96,7 +96,7 @@ const Home = () => (
       </section>
 
       <section>
-        <MySkills />
+        <MySkills/>
       </section>
     </div>
   </div>
