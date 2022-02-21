@@ -25,6 +25,7 @@ import { BsGithub } from "react-icons/bs";
 import {IoOpen} from "react-icons/io5";
 const MyWork = () => (
   <div className={styles.MyWork} id = "skills">
+    <br/>
     <div className={styles.container}>
       <div>
         <br />

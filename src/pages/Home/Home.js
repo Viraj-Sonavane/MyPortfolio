@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import MyWork from "../../components/MyWork/MyWork";
 import { CgScrollV } from "react-icons/cg";
 import MySkills from "../../components/MySkills/MySkills";
+import Contact from "../../components/Contact/Contact";
 
 const Home = () => (
   <div className={styles.Home}>
@@ -94,9 +95,14 @@ const Home = () => (
           <CgScrollV />
         </motion.div>
       </section>
-
       <section>
         <MySkills/>
+        <motion.div className={styles.scroll1}>
+          <CgScrollV />
+        </motion.div>
+      </section>
+      <section>
+        <Contact/>
       </section>
     </div>
   </div>

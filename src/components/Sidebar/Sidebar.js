@@ -19,7 +19,7 @@ const routes = [
     icons: <BsInfoCircleFill />,
   },
   {
-    path: "/skill",
+    path: "/Skills",
     name: "MySkills",
     icons: <BsFillPersonLinesFill />,
   },
@@ -72,9 +72,9 @@ const Sidebar = ({ children }) => {
   return (
     <div className={styles.Sidebars}>
       <motion.div animate={{ width: isOpen ? "200px" : "80px", transition:{
-        duration:2,
+        duration:1,
         type:"spring",
-        damping:4,
+        damping:6,
       } }} className={styles.sidebar} onHoverEnd={toggle} onHoverStart={toggle}>
         <section className="routes">
           {routes.map((route) => (
