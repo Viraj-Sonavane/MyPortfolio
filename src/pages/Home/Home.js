@@ -8,10 +8,12 @@ import { CgScrollV } from "react-icons/cg";
 import MySkills from "../../components/MySkills/MySkills";
 import Contact from "../../components/Contact/Contact";
 
+
 const Home = () => (
   <div className={styles.Home}>
-    <div className={styles.container}>
+    
       <section>
+        <div class="container-fluid" style={{width:"95%"}}>
         <div className={styles.stars}></div>
         <div className={styles.stars1}></div>
         <div className={styles.stars2}></div>
@@ -55,6 +57,7 @@ const Home = () => (
               Contact Me!
             </motion.button>
           </a>
+          
           </div>
           <div class="col-sm-4">
             <br />
@@ -84,8 +87,8 @@ const Home = () => (
         </div>
         <br />
         <br />
-        
-        <motion.div className={styles.scroll}>
+        </div>
+        <motion.div className={styles.scroll1}>
           <CgScrollV />
         </motion.div>
       </section>
@@ -104,7 +107,7 @@ const Home = () => (
       <section>
         <Contact/>
       </section>
-    </div>
+    
   </div>
 );
 

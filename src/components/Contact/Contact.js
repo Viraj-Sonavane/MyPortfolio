@@ -23,7 +23,7 @@ const Contact = () => {
 
 return (
   <div className={styles.Contact}>
-    <div class="container-fluid">
+    <div class="container-fluid" style={{width:"95%"}}>
       <h1>Contact me</h1>
       <br />
       <div class="card-group" styles={{ border: "none" }}>
@@ -115,7 +115,7 @@ return (
               aria-hidden="true"
             >
               <div class="modal-dialog" role="document">
-                <div class="modal-content" style={{backgroundColor:"#cfd2d3",borderRadius:"2.5rem",border:"3px solid red"}}>
+                <div class="modal-content" style={{backgroundColor:"#cfd2d3",borderRadius:"2.5rem",border:"3px solid red",width:"75%"}}>
                   <div class="modal-header" style={{borderBottom: "2px solid aqua"}}>
                     <h2 class="modal-title" style={{fontSize:"30px", color:"black"}} id="exampleModalLabel">
                       Message Sent
@@ -158,10 +158,6 @@ return (
             }}
           ></iframe>
         </div>
-      </div>
-      <div class="card-group">
-        <div class="card"></div>
-        <div class="card"></div>
       </div>
     </div>
   </div>

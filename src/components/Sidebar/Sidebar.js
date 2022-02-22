@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Sidebar.module.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsFillHouseFill, BsFillChatRightQuoteFill,BsGithub,BsLinkedin,BsInfoCircleFill,BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillChatDotsFill,BsFillHouseFill,BsGithub,BsLinkedin,BsInfoCircleFill,BsFillPersonLinesFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import {IoDocumentAttachOutline,} from "react-icons/io5"
-
+import {FaCodepen} from "react-icons/fa"
 const routes = [
   {
     path: "/",
@@ -30,9 +30,15 @@ const routes = [
     target:""
   },
   {
+    path: "/https://codepen.io/your-work/",
+    name: "CodePen",
+    icons: <FaCodepen />,
+    target:""
+  },
+  {
     path: "/Contact",
     name: "Contact",
-    icons: <BsFillChatRightQuoteFill />,
+    icons: <BsFillChatDotsFill />,
   },
   {
     path: "/",
@@ -75,7 +81,7 @@ const Sidebar = ({ children }) => {
         duration:1,
         type:"spring",
         damping:6,
-      } }} className={styles.sidebar} onHoverEnd={toggle} onHoverStart={toggle}>
+      } }} className={styles.sidebar} onMouseEnter={toggle} onMouseLeave={toggle}>
         <section className="routes">
           {routes.map((route) => (
             <NavLink activeClassName={styles.active}  className={styles.link} to={route.path} key={route.name} target={route.target} component={() => { window.location = 'https://github.com'; return null;} }>
@@ -91,7 +97,9 @@ const Sidebar = ({ children }) => {
           ))}
         </section>
       </motion.div>
-      <main className={styles.mains}>{children}</main>
+      <main className={styles.mains}>
+        {children}
+      </main>
     </div>
   );
 };

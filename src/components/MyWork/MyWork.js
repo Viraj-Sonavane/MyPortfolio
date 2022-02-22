@@ -22,11 +22,11 @@ import N4 from "../../Images/N4.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
-import {IoOpen} from "react-icons/io5";
+import {IoOpenOutline} from "react-icons/io5";
 const MyWork = () => (
   <div className={styles.MyWork} id = "skills">
     <br/>
-    <div className={styles.container}>
+    <div class="container-fluid" style={{width:"95%"}}>
       <div>
         <br />
         <br />
@@ -131,7 +131,7 @@ const MyWork = () => (
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
               >
-                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
               </a>
             </div>
           </div>
@@ -212,7 +212,7 @@ const MyWork = () => (
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
               >
-                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
               </a>
             </div>
           </div>
@@ -296,7 +296,7 @@ const MyWork = () => (
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
               >
-                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
               </a>
             </div>
           </div>
@@ -387,10 +387,10 @@ const MyWork = () => (
                 <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
               </a>
               <a
-                href="#"
+                href="https://tradespot-321603.appspot.com"
                 target="_blank"
               >
-                <IoOpen style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
               </a>
             </div>
           </div>

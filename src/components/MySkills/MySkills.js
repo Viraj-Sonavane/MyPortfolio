@@ -11,7 +11,7 @@ const MySkills = (props) => {
   return (
     <div className={styles.MySkills}>
       <br/>
-      <div class="container-fluid">
+      <div class="container-fluid" style={{width:"95%"}}>
         <br />
         <br />
         <h1>My Skills</h1>

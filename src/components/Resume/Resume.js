@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Resume = () => (
   <div className={styles.Resume}>
-    <div className="container-fluid">
+    <div className="container-fluid" style={{width:"95%"}}>
       <div>
         <div className={styles.row}>
           <div class="col-sm-9" style={{paddingLeft:"0px",paddingRight:"0px"}}>
