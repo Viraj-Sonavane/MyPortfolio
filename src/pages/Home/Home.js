@@ -5,15 +5,14 @@ import house from "../../Images/myname.jpg";
 import { motion } from "framer-motion";
 import MyWork from "../../components/MyWork/MyWork";
 import { CgScrollV } from "react-icons/cg";
-import MySkills from "../../components/MySkills/MySkills";
+import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
-
+import { NavLink } from "react-router-dom";
 
 const Home = () => (
   <div className={styles.Home}>
-    
-      <section>
-        <div class="container-fluid" style={{width:"95%"}}>
+    <section>
+      <div class="container-fluid" style={{ width: "95%" }}>
         <div className={styles.stars}></div>
         <div className={styles.stars1}></div>
         <div className={styles.stars2}></div>
@@ -40,24 +39,23 @@ const Home = () => (
               I’m a front-end developer and general doodler with a keen eye for
               creating engaging UI, bringing products to life.
             </motion.p>
-            <br/>
-            <br/>
-            <a href="/Contact">
-            <motion.button
-              className={styles.mbutton}
-              whileHover={{ scale: 1.1 }}
-              animate={{ rotate: 360 }}
-              transition={{
-                type: "spring",
-                damping: 3,
-                duration: 4,
-              }}
-              href="/Contact"
-            >
-              Contact Me!
-            </motion.button>
-          </a>
-          
+            <br />
+            <br />
+            <NavLink to="/Contact" id="Contact">
+              <motion.button
+                className={styles.mbutton}
+                whileHover={{ scale: 1.1 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                  type: "spring",
+                  damping: 3,
+                  duration: 4,
+                }}
+                href="/Contact"
+              >
+                Contact Me!
+              </motion.button>
+            </NavLink>
           </div>
           <div class="col-sm-4">
             <br />
@@ -87,27 +85,32 @@ const Home = () => (
         </div>
         <br />
         <br />
-        </div>
-        <motion.div className={styles.scroll1}>
-          <CgScrollV />
-        </motion.div>
-      </section>
-      <section className={styles.work}>
-        <MyWork />
-        <motion.div className={styles.scroll1}>
-          <CgScrollV />
-        </motion.div>
-      </section>
-      <section>
-        <MySkills/>
-        <motion.div className={styles.scroll1}>
-          <CgScrollV />
-        </motion.div>
-      </section>
-      <section>
-        <Contact/>
-      </section>
-    
+      </div>
+      <motion.div className={styles.scroll1}>
+        <CgScrollV />
+      </motion.div>
+    </section>
+    <br />
+    <br />
+    <section className={styles.work}>
+      <About />
+      <motion.div className={styles.scroll1}>
+        <CgScrollV />
+      </motion.div>
+    </section>
+    <br />
+    <br />
+    <section className={styles.work}>
+      <MyWork />
+      <motion.div className={styles.scroll1}>
+        <CgScrollV />
+      </motion.div>
+    </section>
+    <br />
+    <br />
+    <section className={styles.work}>
+      <Contact />
+    </section>
   </div>
 );
 
