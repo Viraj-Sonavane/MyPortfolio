@@ -7,8 +7,17 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import pdf from "../../PDF/Viraj_Sonavane.pdf";
 import { motion } from "framer-motion";
 
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
-const Resume = () => (
+// Import styles
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+
+
+
+function Resume ()  
+{
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  return (
   <div className={styles.Resume}>
     <div className="container-fluid" style={{width:"95%"}}>
       <div>
@@ -38,11 +47,14 @@ const Resume = () => (
             theme: "dark",
           }}
           fileUrl={pdf}
-        ></Viewer>
+          plugins={[defaultLayoutPluginInstance]}
+        >
+        </Viewer>
       </Worker>
     </div>
   </div>
-);
+  );
+};
 
 Resume.propTypes = {};
 
