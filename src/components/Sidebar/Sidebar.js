@@ -14,11 +14,14 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import { FaCodepen } from "react-icons/fa";
+import NavBar from "../NavBar/NavBar";
+
 const routes = [
   {
     path: "/",
     name: "Home",
-    icons: <BsFillHouseFill />,
+    icons: <NavBar/>
+    ,
   },
   {
     path: "/About",
@@ -26,8 +29,8 @@ const routes = [
     icons: <BsInfoCircleFill />,
   },
   {
-    path: "/Skills",
-    name: "MySkills",
+    path: "/MySkills",
+    name: "Projects",
     icons: <BsFillPersonLinesFill />,
   },
   {
@@ -151,7 +154,6 @@ const Sidebar = ({ children }) => {
           <div className={styles.fullink}>
             <a href="https://codepen.io/your-work/" target="_blank">
               <div className={styles.logo2}>
-                {" "}
                 <FaCodepen />
               </div>
               <AnimatePresence>
@@ -169,6 +171,7 @@ const Sidebar = ({ children }) => {
               </AnimatePresence>
             </a>
           </div>
+          <hr/>
         </section>
       </motion.div>
       <main className={styles.mains}>{children}</main>

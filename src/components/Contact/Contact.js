@@ -22,7 +22,18 @@ const Contact = () => {
 
 
 return (
-  <div className={styles.Contact}>
+  <motion.div 
+    initial={{ x: 1000 }}
+    animate={{
+    x: 0,
+    transition: {
+      duration: 0.5,
+      type:"tween",
+      damping:3
+    },
+    }}className={styles.Contact}
+    id="contact"
+    >
     <div class="container-fluid" style={{width:"95%"}}>
       <h1>Contact me</h1>
       <br />
@@ -147,6 +158,7 @@ return (
           }}
         >
           <iframe
+            title="maps"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5751440.99122179!2d-122.90873918764318!3d37.75197915641101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fceb47d510293%3A0x914fa860d1594296!2sBleecker%20St%2C%20Milpitas%2C%20CA%2095035!5e1!3m2!1sen!2sus!4v1645386551691!5m2!1sen!2sus"
             style={{
               borderWidth: "3px",
@@ -160,7 +172,7 @@ return (
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 };
 

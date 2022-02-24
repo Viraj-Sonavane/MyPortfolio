@@ -8,6 +8,8 @@ import { CgScrollV } from "react-icons/cg";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import { NavLink } from "react-router-dom";
+import LazyLoad from  'react-lazyload';
+
 
 const Home = () => (
   <div className={styles.Home}>
@@ -29,7 +31,7 @@ const Home = () => (
               animate={{
                 x: 0,
                 transition: {
-                  duration: 4,
+                  duration: 2,
                   type: "spring",
                   damping: 4,
                 },
@@ -86,31 +88,39 @@ const Home = () => (
         <br />
         <br />
       </div>
-      <motion.div className={styles.scroll1}>
-        <CgScrollV />
-      </motion.div>
     </section>
-    <br />
-    <br />
+    
+    <motion.div className={styles.scroll1}>
+        <CgScrollV className={styles.scroll}/>
+    </motion.div>
+    
     <section className={styles.work}>
+    <LazyLoad height={-100} offset={-100} once>
       <About />
-      <motion.div className={styles.scroll1}>
-        <CgScrollV />
-      </motion.div>
+    </LazyLoad>
     </section>
-    <br />
-    <br />
+    
+    <motion.div className={styles.scroll1}>
+        <CgScrollV className={styles.scroll}/>
+    </motion.div>          
+
     <section className={styles.work}>
+    <LazyLoad height={-200} offset={-200} once>
       <MyWork />
-      <motion.div className={styles.scroll1}>
-        <CgScrollV />
-      </motion.div>
+      </LazyLoad>
     </section>
-    <br />
-    <br />
+    
+    <motion.div className={styles.scroll1}>
+        <CgScrollV className={styles.scroll}/>
+    </motion.div>
+
     <section className={styles.work}>
+    <LazyLoad height={5} offset={5} once>  
       <Contact />
+    </LazyLoad>
     </section>
+    
+    
   </div>
 );
 

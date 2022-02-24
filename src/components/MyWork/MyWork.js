@@ -24,7 +24,15 @@ import { NavLink } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import {IoOpenOutline} from "react-icons/io5";
 const MyWork = () => (
-  <div className={styles.MyWork} id = "skills">
+  <motion.div initial={{ x: 1000 }}
+  animate={{
+    x: 0,
+    transition: {
+      duration: 0.5,
+      type:"tween",
+      damping:3
+    },
+  }}className={styles.MyWork} id = "skills">
     <br/>
     <div class="container-fluid" style={{width:"95%"}}>
       <div>
@@ -400,7 +408,7 @@ const MyWork = () => (
       <br />
       <br />
     </div>
-  </div>
+  </motion.div>
 );
 
 MyWork.propTypes = {};
