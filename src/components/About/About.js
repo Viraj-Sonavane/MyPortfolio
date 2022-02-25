@@ -9,7 +9,7 @@ const About = () => (
     animate={{
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 1,
         type: "tween",
         damping: 3,
         ease: "easeOut"
@@ -22,7 +22,7 @@ const About = () => (
     <div class="container-fluid" style={{ width: "95%" }}>
       <br />
       <br />
-      <h1>About Me</h1>
+      <h1 className={styles.header}>About Me</h1>
       <div class="card-group" style={{ backgroundColor: "transparent" }}>
         <div
           class="card"
@@ -36,7 +36,7 @@ const About = () => (
             with amazing people from companies around the globe. It's only a
             drop in the ocean compared to the entire list.
           </h2>
-          <div class="row" style={{ marginLeft: "0px" }}>
+          <div class="row" style={{ marginLeft: "0px",marginTop:"30px",marginBottom:"50px" }}>
             <NavLink to="/Resume">
               <motion.button
                 className={styles.lbutton}
@@ -46,23 +46,28 @@ const About = () => (
               </motion.button>
             </NavLink>
           </div>
+          <br/>
         </div>
         <div
           class="card"
-          style={{ backgroundColor: "transparent", border: "none" }}
+          style={{ backgroundColor: "transparent", border: "none",marginTop:"0px" }}
         >
           <div className={styles.content}>
             <div className={styles.front}>
               <p className={styles.aligned1}>HTML5</p>
+              <p className={styles.aligned1s}>CSS3</p>
             </div>
             <div className={styles.back}>
-              <p className={styles.aligned2}>CSS3</p>
+              <p className={styles.aligned2}>React</p>
+              <p className={styles.aligned2s}>Angular</p>
             </div>
             <div className={styles.left}>
-              <p className={styles.aligned3}>UI</p>
+              <p className={styles.aligned3}>JavaScript</p>
+              <p className={styles.aligned3s}>TypeScript</p>
             </div>
             <div className={styles.right}>
-              <p className={styles.aligned4}>UX</p>
+              <p className={styles.aligned4}>UI</p>
+              <p className={styles.aligned4s}>UX</p>
             </div>
             <div className={styles.top}>
               <p className={styles.aligned5}>React</p>

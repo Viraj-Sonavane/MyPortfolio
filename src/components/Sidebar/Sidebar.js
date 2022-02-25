@@ -171,7 +171,6 @@ const Sidebar = ({ children }) => {
               </AnimatePresence>
             </a>
           </div>
-          <hr/>
         </section>
       </motion.div>
       <main className={styles.mains}>{children}</main>

@@ -27,15 +27,15 @@ return (
     animate={{
     x: 0,
     transition: {
-      duration: 0.5,
+      duration: 1,
       type:"tween",
       damping:3
     },
     }}className={styles.Contact}
     id="contact"
     >
-    <div class="container-fluid" style={{width:"95%"}}>
-      <h1>Contact me</h1>
+    <div className={styles.cg}>
+      <h1 className={styles.header}>Contact me</h1>
       <br />
       <div class="card-group" styles={{ border: "none" }}>
         <div
@@ -57,7 +57,7 @@ return (
                   class="form-control"
                   name="user_name"
                   id="user_name"
-                  style={{ borderRadius: "25px" }}
+                  style={{ borderRadius: "25px", background:"#232424" }}
                 ></input>
               </div>
               <div class="form-group col-md-6">
@@ -69,7 +69,7 @@ return (
                   class="form-control"
                   name="user_email"
                   id="user_email"
-                  style={{ borderRadius: "25px" }}
+                  style={{ borderRadius: "25px", background:"#232424" }}
                 ></input>
               </div>
             </div>
@@ -82,7 +82,7 @@ return (
                 class="form-control"
                 name="user_subject"
                 id="user_subject"
-                style={{ borderRadius: "25px" }}
+                style={{ borderRadius: "25px", background:"#232424" }}
               ></input>
             </div>
             <div class="form-group">
@@ -95,7 +95,7 @@ return (
                 class="form-control"
                 name="user_message"
                 id="user_message"
-                style={{ height: "200px", borderRadius: "25px" }}
+                style={{ height: "200px", borderRadius: "25px",background:"#232424"  }}
               ></textarea>
             </div>
             <br />

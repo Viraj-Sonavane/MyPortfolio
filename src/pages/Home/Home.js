@@ -120,6 +120,10 @@ const Home = () => (
     </LazyLoad>
     </section>
     
+    <section className={styles.work}>
+     <hr/>
+     <h2 className={styles.last}>Created by Viraj Sonavane</h2>
+    </section>
     
   </div>
 );

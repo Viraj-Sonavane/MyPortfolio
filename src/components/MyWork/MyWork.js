@@ -28,7 +28,7 @@ const MyWork = () => (
   animate={{
     x: 0,
     transition: {
-      duration: 0.5,
+      duration: 1,
       type:"tween",
       damping:3
     },
@@ -38,7 +38,7 @@ const MyWork = () => (
       <div>
         <br />
         <br />
-        <h1>My Porfolio</h1>
+        <h1 className={styles.header}>My Porfolio</h1>
         <br />
         <div className={styles.row4}>
           <div class="col-sm-10">
