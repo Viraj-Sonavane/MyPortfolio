@@ -35,13 +35,13 @@ const About = () => (
           <br/>
           <h2 className={styles.data}>Here are few technologies I have been working recently:</h2>
          
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> ReactJS</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> Angular</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> JavaScript</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> TypeScript</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> FramerMotion</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> HTML5</div>
-          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> CSS3</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> ReactJS</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> Angular</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> JavaScript</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> TypeScript</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> FramerMotion</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> HTML5</div>
+          <div style={{color:"aqua",fontSize:"1.5vw"}}><BiRightArrow style={{color:"red"}}/> CSS3</div>
     
 
           <div class="row" style={{ marginLeft: "0px",marginTop:"30px",marginBottom:"50px" }}>
