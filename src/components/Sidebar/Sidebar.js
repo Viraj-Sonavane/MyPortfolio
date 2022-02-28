@@ -15,13 +15,13 @@ import { useState } from "react";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import { FaCodepen } from "react-icons/fa";
 import NavBar from "../NavBar/NavBar";
+import { SiLeetcode } from "react-icons/si";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    icons: <NavBar/>
-    ,
+    icons: <NavBar />,
   },
   {
     path: "/About",
@@ -29,7 +29,7 @@ const routes = [
     icons: <BsInfoCircleFill />,
   },
   {
-    path: "/MySkills",
+    path: "/Projects",
     name: "Projects",
     icons: <BsFillPersonLinesFill />,
   },
@@ -89,7 +89,7 @@ const Sidebar = ({ children }) => {
               to={route.path}
               key={route.name}
               target={route.target}
-              >
+            >
               <div className={styles.logo}>{route.icons} </div>
               <AnimatePresence>
                 {isOpen && (
@@ -166,6 +166,26 @@ const Sidebar = ({ children }) => {
                     className={styles.link2text}
                   >
                     Codepn
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </a>
+          </div>
+          <div className={styles.fullink}>
+            <a href="https://leetcode.com/viraj918/" target="_blank">
+              <div className={styles.logo2}>
+                <SiLeetcode />
+              </div>
+              <AnimatePresence>
+                {isOpen && (
+                  <motion.div
+                    variant={showAnimation}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className={styles.link2text}
+                  >
+                    LeetCode
                   </motion.div>
                 )}
               </AnimatePresence>

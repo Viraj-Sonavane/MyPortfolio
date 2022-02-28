@@ -22,9 +22,9 @@ const Home = () => (
           <div class="col-sm-8">
             <br />
             <br />
-            <p className={styles.f}>Hi,</p>
-            <p className={styles.f}>I'm Viraj. </p>
-            <p className={styles.s}>A Developer.</p>
+            <p className={styles.first}>Hi,</p>
+            <p className={styles.second}>I'm Viraj. </p>
+            <p className={styles.third}>A Developer.</p>
             <br />
             <motion.p
               initial={{ x: 400 }}

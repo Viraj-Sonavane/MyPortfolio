@@ -33,7 +33,6 @@ const MyWork = () => (
       damping:3
     },
   }}className={styles.MyWork} id = "skills">
-    <br/>
     <div class="container-fluid" style={{width:"95%"}}>
       <div>
         <br />
@@ -43,18 +42,24 @@ const MyWork = () => (
         <div className={styles.row4}>
           <div class="col-sm-10">
             <h2>
-              A small gallery of recent projects chosen by me. I've done them
-              all together with amazing people from companies around the globe.
-              It's only a drop in the ocean compared to the entire list.
+            A small gallery of my recent projects. I've worked on some of these projects individually and 
+            some of them within a group environment. I have deployed all the projects using CI/CD pipeline 
+            on different cloud platforms.
             </h2>
           </div>
           <div class="col-sm-2">
-            <NavLink to="/MySkills">
+            <NavLink to="/Projects">
               <motion.button
                 className={styles.lbutton}
                 whileHover={{ scale: 1.1 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                  type: "spring",
+                  damping: 3,
+                  duration: 4,
+                }}
               >
-                Learn More
+                More
               </motion.button>
             </NavLink>
           </div>
@@ -66,7 +71,7 @@ const MyWork = () => (
         <motion.div
           className="card"
           style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
-        >
+          >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
@@ -80,6 +85,7 @@ const MyWork = () => (
               whileHover={{
               scale: 0.98,
               transition: { duration: 0.5 },
+              opacity:0.9
               }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
@@ -161,6 +167,7 @@ const MyWork = () => (
              whileHover={{
              scale: 0.98,
              transition: { duration: 0.5 },
+             opacity:0.9
              }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://csci620-team1-ui.azurewebsites.net"
@@ -245,6 +252,7 @@ const MyWork = () => (
               whileHover={{
               scale: 0.98,
               transition: { duration: 0.5 },
+              opacity:0.9
               }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
@@ -326,6 +334,7 @@ const MyWork = () => (
               whileHover={{
               scale: 0.98,
               transition: { duration: 0.5 },
+              opacity:0.9
               }} class="carouselinner" style={{borderRadius:"25px"}}>
               <a href="" target="_blank">
                 <div class="carousel-item active" data-interval="2500">

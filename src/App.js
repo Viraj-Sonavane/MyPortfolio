@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact"
 import Main from "./components/Main/Main";
 import MySkills from "./components/MySkills/MySkills";
 import About from "./components/About/About";
+import MyWork from "./components/MyWork/MyWork";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/Contact" element={<Contact/>} />
             <Route path="/Resume" element={<Resume/>} />
-            <Route path="/Skills" element={<MySkills/>}/>
+            <Route path="/Projects" element={<MyWork/>}/>
             <Route path="/About" element={<About/>}/>
           </Routes>
         </Sidebar>

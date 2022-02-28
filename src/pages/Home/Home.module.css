@@ -89,21 +89,71 @@ p{
     outline: 3px solid red;
 }
 
-.f {
+.first {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     text-shadow: 3px 0px 0px rgb(132, 255, 255),
                1px 3px 0px red;
 
 
-    align-self: flex-end;
-    animation-duration: 3s;     
+    align-self: flex-end;    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 7vw;
     font-weight: bolder;  
-    animation-name: bounce-1;
-    animation-timing-function: linear;
+    animation-name: bounce-1, change;
+    animation-timing-function: linear, step-end;
+    animation-duration: 3s,0s; 
+    animation-fill-mode:none,both;
+    animation-delay: 0s,2s;
+    animation-iteration-count: 1,infinite;
 }
+
+
+.second {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow: 3px 0px 0px rgb(132, 255, 255),
+               1px 3px 0px red;
+
+
+    align-self: flex-end;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vw;
+    font-weight: bolder;  
+    animation-name: bounce-1, change;
+    animation-timing-function: linear, step-end;
+    animation-duration: 3s,0s; 
+    animation-fill-mode:none,both;
+    animation-delay: 0s,2.5s;
+    animation-iteration-count: 1,infinite;
+   
+}
+   
+
+.third {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow: 3px 0px 0px rgb(132, 255, 255),
+               1px 3px 0px red;
+
+
+    align-self: flex-end;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vw;
+    font-weight: bolder;  
+    animation-name: bounce-1, change;
+    animation-timing-function: linear, step-end;
+    animation-duration: 3s,0s; 
+    animation-fill-mode:none,both;
+    animation-delay: 0s,3s;
+    animation-iteration-count: 1,infinite;
+}
+   
+@keyframes change {
+    from { color: aqua }
+    to   { }
+}
+
 @keyframes bounce-1 {
     0%   { transform: scale(1,1)    translateY(-1000px); }
     10%  { transform: scale(1.1,.7) translateY(0); }
@@ -115,36 +165,14 @@ p{
 }
 
 
-.f:hover{
+.first:hover{
     color: #5feef3;
 }
 
-.s {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    text-shadow: 3px 0px 0px rgb(132, 255, 255),
-               1px 3px 0px red;
-
-    
-    align-self: flex-end;
-    animation-duration: 3s;         
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 7vw;
-    font-weight: bolder;  
-    animation-name: bounce-5;
-    animation-timing-function: linear;
+.second:hover{
+    color: #5feef3;
 }
-@keyframes bounce-5 {
-    0%   { transform: scale(1,1)    translateY(-1000px); }
-    10%  { transform: scale(1.1,.7) translateY(0); }
-    30%  { transform: scale(.7,1.1) translateY(-200px); }
-    50%  { transform: scale(1.1,.7)    translateY(-50px); }
-    57%  { transform: scale(1,1)    translateY(-30px); }
-    64%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
-}
-
-.s:hover{
+.third:hover{
     color: #5feef3;
 }
 
@@ -152,7 +180,7 @@ p{
     align-self: flex-end;
     color: #e0e2e2;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-weight:900;  
 }
 

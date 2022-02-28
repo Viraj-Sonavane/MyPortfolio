@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./About.module.css";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import {BiRightArrow} from "react-icons/bi"
 const About = () => (
   <motion.div
     initial={{ x: 1000 }}
@@ -18,7 +19,6 @@ const About = () => (
     className={styles.About}
     id="about"
   >
-    <br />
     <div class="container-fluid" style={{ width: "95%" }}>
       <br />
       <br />
@@ -29,18 +29,32 @@ const About = () => (
           style={{ backgroundColor: "transparent", border: "none" }}
         >
           <h2 className={styles.data}>
-            A small gallery of recent projects chosen by me. I've done them all
-            together with amazing people from companies around the globe. It's
-            only a drop in the ocean compared to the entire list. A small
-            gallery of recent projects chosen by me. I've done them all together
-            with amazing people from companies around the globe. It's only a
-            drop in the ocean compared to the entire list.
-          </h2>
+          Hey!! My name is Viraj and I enjoy creating a web application with interactive UI. I have completed my Masters in Computer Science from California State University in December 2021. 
+          My interest in web applications started while creating websites for university coursework. I like to create web applications with engaging UI and experiment with new frameworks and platforms
+          to keep myself updated with new technologies. </h2>
+          <br/>
+          <h2 className={styles.data}>Here are few technologies I have been working recently:</h2>
+         
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> ReactJS</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> Angular</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> JavaScript</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> TypeScript</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> FramerMotion</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> HTML5</div>
+          <div style={{color:"aqua",fontSize:"20px"}}><BiRightArrow style={{color:"red"}}/> CSS3</div>
+    
+
           <div class="row" style={{ marginLeft: "0px",marginTop:"30px",marginBottom:"50px" }}>
             <NavLink to="/Resume">
               <motion.button
                 className={styles.lbutton}
                 whileHover={{ scale: 1.1 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                  type: "spring",
+                  damping: 3,
+                  duration: 4,
+                }}
               >
                 View Resume
               </motion.button>

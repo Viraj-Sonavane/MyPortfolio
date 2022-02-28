@@ -18,7 +18,15 @@ function Resume ()
 {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   return (
-  <div className={styles.Resume}>
+  <motion.div initial={{ x: 1000 }}
+  animate={{
+    x: 0,
+    transition: {
+      duration: 1,
+      type:"tween",
+      damping:3
+    },
+  }}className={styles.Resume}>
     <div className="container-fluid" style={{width:"95%"}}>
       <div>
         <div className={styles.row}>
@@ -52,7 +60,7 @@ function Resume ()
         </Viewer>
       </Worker>
     </div>
-  </div>
+  </motion.div>
   );
 };
 

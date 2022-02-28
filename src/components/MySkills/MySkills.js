@@ -10,7 +10,7 @@ const styless = {
 const MySkills = (props) => {
   return (
     <div id="skill" className={styles.MySkills}>
-      
+        
     </div>
   );
 };
