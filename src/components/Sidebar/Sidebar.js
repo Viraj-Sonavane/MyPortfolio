@@ -70,7 +70,7 @@ const Sidebar = ({ children }) => {
     <div className={styles.Sidebars}>
       <motion.div
         animate={{
-          width: isOpen ? "200px" : "80px",
+          width: isOpen ? "200px" : "75px",
           transition: {
             duration: 1,
             type: "spring",
@@ -100,7 +100,6 @@ const Sidebar = ({ children }) => {
                     exit="hidden"
                     className={styles.linktext}
                   >
-                    {" "}
                     {route.name}
                   </motion.div>
                 )}

@@ -63,7 +63,6 @@ hr {
 
 
 .link:hover{
-    font-weight: bolder ;
     color: rgb(7, 7, 7) ;
     border-right: 6px solid rgb(255, 4, 4) ;
     background-color: rgb(176, 229, 240) ;
@@ -108,7 +107,6 @@ a:hover{
 
 
 .fullink:hover{
-    font-weight: bolder;
     color: rgb(7, 7, 7);
     border-right: 6px solid rgb(255, 4, 4);
     background-color: rgb(176, 229, 240);
@@ -126,6 +124,5 @@ a:hover{
 }
 
 .link2text:hover  {
-    font-weight: bolder ;
     color: #0c0c0c ;
 }
