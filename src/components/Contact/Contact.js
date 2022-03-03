@@ -34,6 +34,8 @@ return (
     }}className={styles.Contact}
     id="contact"
     >
+    <br/>
+    <br/>
     <div className={styles.cg}>
       <h1 className={styles.header}>Contact me</h1>
       <br />

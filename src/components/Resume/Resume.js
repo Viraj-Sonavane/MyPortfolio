@@ -27,6 +27,8 @@ function Resume ()
       damping:3
     },
   }}className={styles.Resume}>
+    <br/>
+    <br/>
     <div className="container-fluid" style={{width:"95%"}}>
       <div>
         <div className={styles.row}>

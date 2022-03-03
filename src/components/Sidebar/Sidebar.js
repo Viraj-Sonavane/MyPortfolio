@@ -70,7 +70,7 @@ const Sidebar = ({ children }) => {
     <div className={styles.Sidebars}>
       <motion.div
         animate={{
-          width: isOpen ? "200px" : "75px",
+          width: isOpen ? "200px" : "70px",
           transition: {
             duration: 1,
             type: "spring",
