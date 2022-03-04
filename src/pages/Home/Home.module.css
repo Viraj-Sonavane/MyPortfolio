@@ -3,6 +3,26 @@
     background: radial-gradient(ellipse at bottom, #b4b8b8 0%,#0c0c0c 100%);
 }
 
+
+.last{
+    color: #0c0c0c;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.last:hover{
+    color: aqua;
+}
+
+.footer{
+    justify-content: center;
+}
+
+.footer:hover{
+    justify-content: center;
+}
+
+
 p{
     margin-bottom: 0rem;
 }

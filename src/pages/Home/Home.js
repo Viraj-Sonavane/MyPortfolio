@@ -9,7 +9,7 @@ import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import { NavLink } from "react-router-dom";
 import LazyLoad from  'react-lazyload';
-
+import {BiGitRepoForked} from "react-icons/bi"
 
 const Home = () => (
   <div className={styles.Home}>
@@ -121,8 +121,9 @@ const Home = () => (
     </section>
     
     <section className={styles.work}>
-     <hr/>
-     <h2 className={styles.last}>Created by Viraj Sonavane</h2>
+     <br/>
+        <a target="_blank" href="https://github.com/Viraj-Sonavane/MyPortfolio" className={styles.footer}><h2 className={styles.last}>Designed and built by Viraj Sonavane  <BiGitRepoForked style={{fontSize:"18px"}}/></h2></a>
+        <br/>
     </section>
     
   </div>
