@@ -60,68 +60,34 @@
 
 .aligned1{
     color: aqua;
-    font-size: 3vw;
-    margin-left: 7.5rem;
-    margin-top: 0rem;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    font-family:fantasy;
 }
-
-.aligned1s{
-    color: aqua;
-    font-size: 3vw;
-    margin-left: 0rem;
-    margin-top: 9rem;
-}
-
 
 .aligned2{
     transform: rotate();
     color: aqua;
-    font-size: 3vw;
-    margin-left: 10rem;
-    margin-top: 0rem;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    transform: rotate(180deg);
+    font-family:fantasy;
 }
-
-
-.aligned2s{
-    transform: rotate();
-    color: aqua;
-    font-size: 3vw;
-    margin-left: 0rem;
-    margin-top: 9rem;
-}
-
 
 .aligned3{
     transform: rotate(0deg);
     color: aqua;
-    font-size: 3vw;
-    margin-left: 3rem;
-    margin-top: 0rem;
-}
-
-
-.aligned3s{
-    transform: rotate(0deg);
-    color: aqua;
-    font-size: 3vw;
-    margin-left: 0rem;
-    margin-top: 9rem;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    font-family:fantasy;
 }
 
 .aligned4{
     transform: rotate();
     color: aqua;
-    font-size: 3vw;
-    margin-left: 14rem;
-    margin-top: 0rem;
-}
-
-.aligned4s{
-    transform: rotate();
-    color: aqua;
-    font-size: 3vw;
-    margin-left: 0rem;
-    margin-top: 9rem;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    font-family:fantasy;
 }
 
 .content{
@@ -157,30 +123,42 @@
 .front{
     transform: translateZ(150px);
     transform-origin: center top;
+    text-align: center;
+    overflow: hidden;
 }
 
 .back{
     transform: translateZ(-150px) rotateY(180deg);
+    text-align: center;
+    overflow: hidden;
 }
 
 .left{
     transform: rotateY(270deg) translateX(-150px);
     transform-origin: center left;
+    text-align: center;
+    overflow: hidden;
 }
 
 .right{
     transform: rotateY(-270deg) translateX(150px);
     transform-origin: top right;
+    text-align: center;
+    overflow: hidden;
 }
 
 .top{
     transform: rotateX(-270deg) translateY(-150px);
     transform-origin: right top;   
+    text-align: center;
+    overflow: hidden;
 }
 
 .bottom{
     transform: rotateX(270deg) translateY(150px); 
     transform-origin: bottom center;  
+    text-align: center;
+    overflow: hidden;
 }
 
 
@@ -204,98 +182,43 @@
     .front{
         transform: translateZ(75px);
         transform-origin: center top;
+        text-align: center;
+        overflow: hidden;
     }
     
     .back{
         transform: translateZ(-75px) rotateY(180deg);
+        text-align: center;
+        overflow: hidden;
     }
     
     .left{
         transform: rotateY(270deg) translateX(-75px);
         transform-origin: center left;
+        text-align: center;
+        overflow: hidden;
     }
     
     .right{
         transform: rotateY(-270deg) translateX(75px);
         transform-origin: top right;
+        text-align: center;
+        overflow: hidden;
     }
     
     .top{
         transform: rotateX(-270deg) translateY(-75px);
         transform-origin: right top;   
+        text-align: center;
+        overflow: hidden;
     }
     
     .bottom{
         transform: rotateX(270deg) translateY(75px); 
         transform-origin: bottom center;  
+        text-align: center;
+        overflow: hidden;
     }
 }
 
 
-@media screen and (max-width:1500px) {
-    .aligned1{
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 5.5rem;
-        margin-top: 0rem;
-    }
-    
-    .aligned1s{
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 0rem;
-        margin-top: 6rem;
-    }
-    
-    
-    .aligned2{
-        transform: rotate();
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 6rem;
-        margin-top: 0rem;
-    }
-    
-    
-    .aligned2s{
-        transform: rotate();
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 0rem;
-        margin-top: 6rem;
-    }
-    
-    
-    .aligned3{
-        transform: rotate(0deg);
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 4rem;
-        margin-top: 0rem;
-    }
-    
-    
-    .aligned3s{
-        transform: rotate(0deg);
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 0rem;
-        margin-top: 6rem;
-    }
-    
-    .aligned4{
-        transform: rotate();
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 7rem;
-        margin-top: 0rem;
-    }
-    
-    .aligned4s{
-        transform: rotate();
-        color: aqua;
-        font-size: 1.5vw;
-        margin-left: 0rem;
-        margin-top: 6rem;
-    }
-}

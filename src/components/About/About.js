@@ -69,25 +69,31 @@ const About = () => (
           <div className={styles.content}>
             <div className={styles.front}>
               <p className={styles.aligned1}>HTML5</p>
-              <p className={styles.aligned1s}>CSS3</p>
+              <p className={styles.aligned1}>CSS3</p>
+              <p className={styles.aligned1}>Boostrap</p>
+              <p className={styles.aligned1}>Foundation</p>
+              <p className={styles.aligned1}>Material-UI</p>
             </div>
             <div className={styles.back}>
+              <p className={styles.aligned2}>Django</p>
+              <p className={styles.aligned2}>Angular</p>
               <p className={styles.aligned2}>React</p>
-              <p className={styles.aligned2s}>Angular</p>
+              <p className={styles.aligned2}>TypeScript</p>
+              <p className={styles.aligned2}>JavaScript</p>
             </div>
             <div className={styles.left}>
-              <p className={styles.aligned3}>JavaScript</p>
-              <p className={styles.aligned3s}>TypeScript</p>
+              <p className={styles.aligned3}>JSON</p>
+              <p className={styles.aligned3}>ES6</p>
+              <p className={styles.aligned3}>AWS</p>
+              <p className={styles.aligned3}>GCP</p>
+              <p className={styles.aligned3}>Git</p>
             </div>
             <div className={styles.right}>
-              <p className={styles.aligned4}>UI</p>
-              <p className={styles.aligned4s}>UX</p>
-            </div>
-            <div className={styles.top}>
-              <p className={styles.aligned5}>React</p>
-            </div>
-            <div className={styles.bottom}>
-              <p className={styles.aligned6}>Angular</p>
+              <p className={styles.aligned4}>C++</p>
+              <p className={styles.aligned4}>JAVA</p>
+              <p className={styles.aligned4}>Python</p>
+              <p className={styles.aligned4}>SQL</p>
+              <p className={styles.aligned4}>MySQL</p>
             </div>
           </div>
         </div>
