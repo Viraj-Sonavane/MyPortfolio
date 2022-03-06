@@ -95,9 +95,7 @@ const Home = () => (
     </motion.div>
     
     <section className={styles.work}>
-    <LazyLoad height={-100} offset={-100} once>
       <About />
-    </LazyLoad>
     </section>
     
     <motion.div className={styles.scroll1}>
@@ -105,9 +103,7 @@ const Home = () => (
     </motion.div>          
 
     <section className={styles.work}>
-    <LazyLoad height={-200} offset={-200} once>
       <MyWork />
-      </LazyLoad>
     </section>
     
     <motion.div className={styles.scroll1}>
@@ -115,9 +111,7 @@ const Home = () => (
     </motion.div>
 
     <section className={styles.work}>
-    <LazyLoad height={5} offset={5} once>  
       <Contact />
-    </LazyLoad>
     </section>
     
     <section className={styles.work}>

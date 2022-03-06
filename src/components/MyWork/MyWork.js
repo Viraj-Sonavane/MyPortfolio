@@ -22,18 +22,15 @@ import N4 from "../../Images/N4.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
-import {IoOpenOutline} from "react-icons/io5";
+import { IoOpenOutline } from "react-icons/io5";
 const MyWork = () => (
-  <motion.div initial={{ x: 1000 }}
-  animate={{
-    x: 0,
-    transition: {
-      duration: 1,
-      type:"tween",
-      damping:3
-    },
-  }}className={styles.MyWork} id = "skills">
-    <div class="container-fluid" style={{width:"95%"}}>
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    className={styles.MyWork}
+    id="skills"
+  >
+    <div class="container-fluid" style={{ width: "95%" }}>
       <div>
         <br />
         <br />
@@ -42,9 +39,10 @@ const MyWork = () => (
         <div className={styles.row4}>
           <div class="col-sm-10">
             <h2>
-            A small gallery of my recent projects. I've worked on some of these projects individually and 
-            some of them within a group environment. I have deployed all the projects using CI/CD pipeline 
-            on different cloud platforms.
+              A small gallery of my recent projects. I've worked on some of
+              these projects individually and some of them within a group
+              environment. I have deployed all the projects using CI/CD pipeline
+              on different cloud platforms.
             </h2>
           </div>
           <div class="col-sm-2">
@@ -71,7 +69,7 @@ const MyWork = () => (
         <motion.div
           className="card"
           style={{ backgroundColor: "aqua", border: "1.25px solid aqua" }}
-          >
+        >
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
@@ -81,12 +79,15 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <motion.div  
+            <motion.div
               whileHover={{
-              scale: 0.98,
-              transition: { duration: 0.5 },
-              opacity:0.9
-              }} class="carouselinner" style={{borderRadius:"25px"}}>
+                scale: 0.98,
+                transition: { duration: 0.5 },
+                opacity: 0.9,
+              }}
+              class="carouselinner"
+              style={{ borderRadius: "25px" }}
+            >
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
@@ -134,18 +135,30 @@ const MyWork = () => (
               paddingLeft: "1rem",
             }}
           >
-            <div class="row" style={{ width: "100%",display:"flex"}}>
+            <div class="row" style={{ width: "100%", display: "flex" }}>
               <a
                 href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor"
                 target="_blank"
               >
-                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+                <BsGithub
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
               >
-                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline
+                  style={{
+                    fontSize: "30px",
+                    color: "coral",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
             </div>
           </div>
@@ -163,12 +176,15 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <motion.div  
-             whileHover={{
-             scale: 0.98,
-             transition: { duration: 0.5 },
-             opacity:0.9
-             }} class="carouselinner" style={{borderRadius:"25px"}}>
+            <motion.div
+              whileHover={{
+                scale: 0.98,
+                transition: { duration: 0.5 },
+                opacity: 0.9,
+              }}
+              class="carouselinner"
+              style={{ borderRadius: "25px" }}
+            >
               <a
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
@@ -216,18 +232,27 @@ const MyWork = () => (
               paddingLeft: "1rem",
             }}
           >
-             <div class="row" style={{ width: "100%",display:"flex"}}>
-              <a
-                href="https://github.com/Viraj-Sonavane/team1"
-                target="_blank"
-              >
-                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+            <div class="row" style={{ width: "100%", display: "flex" }}>
+              <a href="https://github.com/Viraj-Sonavane/team1" target="_blank">
+                <BsGithub
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
               <a
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
               >
-                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline
+                  style={{
+                    fontSize: "30px",
+                    color: "coral",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
             </div>
           </div>
@@ -248,12 +273,15 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <motion.div  
+            <motion.div
               whileHover={{
-              scale: 0.98,
-              transition: { duration: 0.5 },
-              opacity:0.9
-              }} class="carouselinner" style={{borderRadius:"25px"}}>
+                scale: 0.98,
+                transition: { duration: 0.5 },
+                opacity: 0.9,
+              }}
+              class="carouselinner"
+              style={{ borderRadius: "25px" }}
+            >
               <a
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
@@ -301,18 +329,30 @@ const MyWork = () => (
               paddingLeft: "1rem",
             }}
           >
-             <div class="row" style={{ width: "100%",display:"flex"}}>
+            <div class="row" style={{ width: "100%", display: "flex" }}>
               <a
                 href="https://github.com/Viraj-Sonavane/Amplify"
                 target="_blank"
               >
-                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+                <BsGithub
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
               <a
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
               >
-                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+                <IoOpenOutline
+                  style={{
+                    fontSize: "30px",
+                    color: "coral",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
             </div>
           </div>
@@ -330,12 +370,15 @@ const MyWork = () => (
             data-placement="top"
             title="Click to open"
           >
-            <motion.div  
+            <motion.div
               whileHover={{
-              scale: 0.98,
-              transition: { duration: 0.5 },
-              opacity:0.9
-              }} class="carouselinner" style={{borderRadius:"25px"}}>
+                scale: 0.98,
+                transition: { duration: 0.5 },
+                opacity: 0.9,
+              }}
+              class="carouselinner"
+              style={{ borderRadius: "25px" }}
+            >
               <a href="" target="_blank">
                 <div class="carousel-item active" data-interval="2500">
                   <img
@@ -396,18 +439,27 @@ const MyWork = () => (
               paddingLeft: "1rem",
             }}
           >
-             <div class="row" style={{ width: "100%",display:"flex"}}>
+            <div class="row" style={{ width: "100%", display: "flex" }}>
               <a
                 href="https://github.com/CSUChico-CINS465/CINS465-S21-Viraj-Sonavane/tree/Project"
                 target="_blank"
               >
-                <BsGithub style={{ fontSize: "30px", color: "white" , marginLeft:"1rem"}} />
+                <BsGithub
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
-              <a
-                href="https://tradespot-321603.appspot.com"
-                target="_blank"
-              >
-                <IoOpenOutline style={{ fontSize: "30px", color: "coral", marginLeft:"1rem" }} />
+              <a href="https://tradespot-321603.appspot.com" target="_blank">
+                <IoOpenOutline
+                  style={{
+                    fontSize: "30px",
+                    color: "coral",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
             </div>
           </div>
