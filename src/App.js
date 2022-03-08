@@ -8,7 +8,6 @@ import Main from "./components/Main/Main";
 import MySkills from "./components/MySkills/MySkills";
 import About from "./components/About/About";
 import MyWork from "./components/MyWork/MyWork";
-
 function App() {
   return (
     <div className={styles.App}>

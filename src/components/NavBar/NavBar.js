@@ -8,7 +8,7 @@ const NavBar = () => (
     <svg className={styles.icon}
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      height="35px"
+      height="2.2vw"
       viewBox="0 0 200.000000 200.000000"
       preserveAspectRatio="xMidYMid meet"
     >

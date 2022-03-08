@@ -30,6 +30,7 @@ const MyWork = () => (
     className={styles.MyWork}
     id="skills"
   >
+    
     <div class="container-fluid" style={{ width: "95%" }}>
       <div>
         <br />
@@ -46,7 +47,7 @@ const MyWork = () => (
             </h2>
           </div>
           <div class="col-sm-2">
-            <NavLink to="/Projects">
+            <NavLink style={{justifyContent:"center"}}to="/Projects">
               <motion.button
                 className={styles.lbutton}
                 whileHover={{ scale: 1.1 }}
@@ -142,7 +143,7 @@ const MyWork = () => (
               >
                 <BsGithub
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -154,7 +155,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -236,7 +237,7 @@ const MyWork = () => (
               <a href="https://github.com/Viraj-Sonavane/team1" target="_blank">
                 <BsGithub
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -248,7 +249,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -336,7 +337,7 @@ const MyWork = () => (
               >
                 <BsGithub
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -348,7 +349,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -379,7 +380,7 @@ const MyWork = () => (
               class="carouselinner"
               style={{ borderRadius: "25px" }}
             >
-              <a href="" target="_blank">
+              <a href="https://tradespot-321603.appspot.com" target="_blank">
                 <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
@@ -446,7 +447,7 @@ const MyWork = () => (
               >
                 <BsGithub
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -455,7 +456,7 @@ const MyWork = () => (
               <a href="https://tradespot-321603.appspot.com" target="_blank">
                 <IoOpenOutline
                   style={{
-                    fontSize: "30px",
+                    fontSize: "2.3vw",
                     color: "coral",
                     marginLeft: "1rem",
                   }}

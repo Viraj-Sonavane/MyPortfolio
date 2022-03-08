@@ -30,17 +30,16 @@
 }
 
 .buttons{
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 3vw;
+  margin-top: 1vw;
   background-color: rgb(22, 21, 21);  
   color: rgb(180, 180, 178);
-  border: 3px solid rgb(255, 0, 0);
-  border-radius: 25px;
-  padding: 10px 30px;
+  border: 0.2vw solid rgb(255, 0, 0);
+  border-radius: 2vw;
+  padding: 1vw 2.5vw;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 1.2vw;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #5feef3;
   -webkit-transition: ease-out 0.4s;

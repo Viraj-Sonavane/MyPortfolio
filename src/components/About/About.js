@@ -15,6 +15,7 @@ const About = () => (
       <br />
       <br />
       <h1 className={styles.header}>About Me</h1>
+      <br/>
       <div class="card-group" style={{ backgroundColor: "transparent" }}>
         <div
           class="card"
@@ -60,8 +61,7 @@ const About = () => (
             class="row"
             style={{
               marginLeft: "0px",
-              marginTop: "30px",
-              marginBottom: "50px",
+              marginTop: "3vw",
             }}
           >
             <NavLink to="/Resume">
