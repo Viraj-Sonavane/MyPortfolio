@@ -15,60 +15,17 @@ import { BiRightArrow } from "react-icons/bi";
 
 const COVID = () => (
   <div className={styles.COVID}>
-
-          <div
-            id="carouselExampleFade"
-            class="carousel slide carousel-fade"
-            data-ride="carousel"
-            pause="hover"
-            title="Click to open"
-            data-toggle="modal"
-            data-target="#P1"
-           >
-            <motion.div
-              whileHover={{
-                scale: 0.98,
-                transition: { duration: 0.5 },
-                opacity: 0.9,
-              }}
-              class="carouselinner"
-              style={{ borderRadius: "25px" }}
-              >
-            
-                <div class="carousel-item active" data-interval="2500">
-                  <img
-                    className={styles.images}
-                    src={S3}
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-                <div class="carousel-item" data-interval="2500">
-                  <img
-                    className={styles.images}
-                    src={S1}
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-                <div class="carousel-item" data-interval="2500">
-                  <img
-                    className={styles.images}
-                    src={S2}
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-                <div class="carousel-item" data-interval="2500">
-                  <img
-                    className={styles.images}
-                    src={S4}
-                    class="d-block w-100"
-                    alt="..."
-                  ></img>
-                </div>
-            </motion.div>
-          </div>
+    <motion.img
+      whileHover={{
+        scale: 0.98,
+        transition: { duration: 0.5 },
+        opacity: 0.9,
+      }}
+      data-toggle="modal"
+      data-target="#P1"
+      src={S3}
+      className={styles.firstpic}
+    ></motion.img>
 
     <div
       class="modal fade"
