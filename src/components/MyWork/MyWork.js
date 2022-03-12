@@ -50,7 +50,7 @@ const MyWork = () => (
             <NavLink style={{justifyContent:"center"}}to="/Projects">
               <motion.button
                 className={styles.lbutton}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 0.95 }}
                 animate={{ rotate: 360 }}
                 transition={{
                   type: "spring",
@@ -92,7 +92,7 @@ const MyWork = () => (
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
-              >
+               >
                 <div class="carousel-item active" data-interval="2500">
                   <img
                     className={styles.images}
@@ -138,12 +138,12 @@ const MyWork = () => (
           >
             <div class="row" style={{ width: "100%", display: "flex" }}>
               <a
-                href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor"
+                href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor/tree/web"
                 target="_blank"
               >
                 <BsGithub
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -155,7 +155,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -237,7 +237,7 @@ const MyWork = () => (
               <a href="https://github.com/Viraj-Sonavane/team1" target="_blank">
                 <BsGithub
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -249,7 +249,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -332,12 +332,12 @@ const MyWork = () => (
           >
             <div class="row" style={{ width: "100%", display: "flex" }}>
               <a
-                href="https://github.com/Viraj-Sonavane/Amplify"
+                href="https://github.com/Viraj-Sonavane/NoteTaker"
                 target="_blank"
               >
                 <BsGithub
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -349,7 +349,7 @@ const MyWork = () => (
               >
                 <IoOpenOutline
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "coral",
                     marginLeft: "1rem",
                   }}
@@ -447,7 +447,7 @@ const MyWork = () => (
               >
                 <BsGithub
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "white",
                     marginLeft: "1rem",
                   }}
@@ -456,7 +456,7 @@ const MyWork = () => (
               <a href="https://tradespot-321603.appspot.com" target="_blank">
                 <IoOpenOutline
                   style={{
-                    fontSize: "2.3vw",
+                    fontSize: "30px",
                     color: "coral",
                     marginLeft: "1rem",
                   }}

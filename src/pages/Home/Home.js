@@ -46,7 +46,7 @@ const Home = () => (
             <NavLink to="/Contact" id="Contact">
               <motion.button
                 className={styles.mbutton}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 0.95 }}
                 animate={{ rotate: 360 }}
                 transition={{
                   type: "spring",

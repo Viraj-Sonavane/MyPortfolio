@@ -61,19 +61,16 @@ const About = () => (
             class="row"
             style={{
               marginLeft: "0px",
-              marginTop: "3vw",
+              marginTop: "2vw",
             }}
           >
             <NavLink to="/Resume">
               <motion.button
                 className={styles.lbutton}
-                whileHover={{ scale: 1.1 }}
-                animate={{ rotate: 360 }}
-                transition={{
-                  type: "spring",
-                  damping: 3,
-                  duration: 4,
-                }}
+                whileHover={{scale: 0.95 }}
+                initial={{x:4000, opacity:0}}
+                animate={{ x:0, opacity: 1 }}
+                transition={{ opacity:1, type:"tween" }}
               >
                 View Resume
               </motion.button>

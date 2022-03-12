@@ -108,7 +108,7 @@ const Contact = () => {
               <br />
               <div style={{ marginLeft: "1px" }}>
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 0.95 }}
                   animate={{ rotate: 360 }}
                   transition={{
                     type: "spring",
