@@ -65,6 +65,7 @@
 
 .linktext{
     align-items: center;
+    font-weight: bolder;
 }
 
 .active{
@@ -100,6 +101,7 @@ a:hover{
     
     color: aliceblue;
     align-items: center;
+    font-weight: bolder;
 }
 
 .link2text:hover  {

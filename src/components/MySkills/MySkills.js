@@ -46,24 +46,14 @@ const MySkills = (props) => {
                   href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor/tree/web"
                   target="_blank"
                 >
-                  <BsGithub
-                    style={{
-                      fontSize: "30px",
-                      color: "white",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <BsGithub className={styles.icon1}/>
                 </a>
                 <a
                   href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                   target="_blank"
                 >
                   <IoOpenOutline
-                    style={{
-                      fontSize: "30px",
-                      color: "coral",
-                      marginLeft: "1rem",
-                    }}
+                    className={styles.icon2}
                   />
                 </a>
               </div>
@@ -94,11 +84,7 @@ const MySkills = (props) => {
                   target="_blank"
                 >
                   <BsGithub
-                    style={{
-                      fontSize: "30px",
-                      color: "white",
-                      marginLeft: "1rem",
-                    }}
+                    className={styles.icon1}
                   />
                 </a>
                 <a
@@ -106,11 +92,7 @@ const MySkills = (props) => {
                   target="_blank"
                 >
                   <IoOpenOutline
-                    style={{
-                      fontSize: "30px",
-                      color: "coral",
-                      marginLeft: "1rem",
-                    }}
+                    className={styles.icon2}
                   />
                 </a>
               </div>
@@ -142,25 +124,13 @@ const MySkills = (props) => {
                   href="https://github.com/Viraj-Sonavane/NoteTaker"
                   target="_blank"
                 >
-                  <BsGithub
-                    style={{
-                      fontSize: "30px",
-                      color: "white",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <BsGithub className={styles.icon1}/>
                 </a>
                 <a
                   href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                   target="_blank"
                 >
-                  <IoOpenOutline
-                    style={{
-                      fontSize: "30px",
-                      color: "coral",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <IoOpenOutline className={styles.icon2}/>
                 </a>
               </div>
             </div>
@@ -189,22 +159,10 @@ const MySkills = (props) => {
                   href="https://github.com/CSUChico-CINS465/CINS465-S21-Viraj-Sonavane/tree/Project"
                   target="_blank"
                 >
-                  <BsGithub
-                    style={{
-                      fontSize: "30px",
-                      color: "white",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <BsGithub className={styles.icon1}/>
                 </a>
                 <a href="https://tradespot-321603.appspot.com" target="_blank">
-                  <IoOpenOutline
-                    style={{
-                      fontSize: "30px",
-                      color: "coral",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <IoOpenOutline className={styles.icon2}/>
                 </a>
               </div>
             </div>
@@ -233,22 +191,10 @@ const MySkills = (props) => {
                   href="https://github.com/Viraj-Sonavane/PlayBuddy.git"
                   target="_blank"
                 >
-                  <BsGithub
-                    style={{
-                      fontSize: "30px",
-                      color: "white",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <BsGithub className={styles.icon1}/>
                 </a>
                 <a href="#">
-                  <IoOpenOutline
-                    style={{
-                      fontSize: "30px",
-                      color: "coral",
-                      marginLeft: "1rem",
-                    }}
-                  />
+                  <IoOpenOutline className={styles.icon2}/>
                 </a>
               </div>
             </div>

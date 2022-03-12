@@ -23,6 +23,8 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { IoOpenOutline } from "react-icons/io5";
+import {MdOutlineDoubleArrow} from "react-icons/md";
+
 const MyWork = () => (
   <motion.div
     initial={{ opacity: 0 }}
@@ -64,7 +66,6 @@ const MyWork = () => (
           </div>
         </div>
       </div>
-      <br />
       <br />
       <div class="card-group">
         <motion.div
@@ -141,25 +142,13 @@ const MyWork = () => (
                 href="https://github.com/Viraj-Sonavane/Covid-19-Peak-Predictor/tree/web"
                 target="_blank"
               >
-                <BsGithub
-                  style={{
-                    fontSize: "30px",
-                    color: "white",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <BsGithub className={styles.icon1}/>
               </a>
               <a
                 href="https://share.streamlit.io/viraj-sonavane/covid-19-peak-predictor/web/app.py"
                 target="_blank"
               >
-                <IoOpenOutline
-                  style={{
-                    fontSize: "30px",
-                    color: "coral",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <IoOpenOutline className={styles.icon2}/>
               </a>
             </div>
           </div>
@@ -235,25 +224,13 @@ const MyWork = () => (
           >
             <div class="row" style={{ width: "100%", display: "flex" }}>
               <a href="https://github.com/Viraj-Sonavane/team1" target="_blank">
-                <BsGithub
-                  style={{
-                    fontSize: "30px",
-                    color: "white",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <BsGithub className={styles.icon1}/>
               </a>
               <a
                 href="https://csci620-team1-ui.azurewebsites.net"
                 target="_blank"
               >
-                <IoOpenOutline
-                  style={{
-                    fontSize: "30px",
-                    color: "coral",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <IoOpenOutline className={styles.icon2}/>
               </a>
             </div>
           </div>
@@ -335,25 +312,13 @@ const MyWork = () => (
                 href="https://github.com/Viraj-Sonavane/NoteTaker"
                 target="_blank"
               >
-                <BsGithub
-                  style={{
-                    fontSize: "30px",
-                    color: "white",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <BsGithub className={styles.icon1}/>
               </a>
               <a
                 href="https://main.d24fn9bmcuph0s.amplifyapp.com/"
                 target="_blank"
               >
-                <IoOpenOutline
-                  style={{
-                    fontSize: "30px",
-                    color: "coral",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <IoOpenOutline className={styles.icon2}/>
               </a>
             </div>
           </div>
@@ -445,27 +410,18 @@ const MyWork = () => (
                 href="https://github.com/CSUChico-CINS465/CINS465-S21-Viraj-Sonavane/tree/Project"
                 target="_blank"
               >
-                <BsGithub
-                  style={{
-                    fontSize: "30px",
-                    color: "white",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <BsGithub className={styles.icon1}/>
               </a>
               <a href="https://tradespot-321603.appspot.com" target="_blank">
-                <IoOpenOutline
-                  style={{
-                    fontSize: "30px",
-                    color: "coral",
-                    marginLeft: "1rem",
-                  }}
-                />
+                <IoOpenOutline className={styles.icon2}/>
               </a>
             </div>
           </div>
         </motion.div>
       </div>
+      <NavLink to="/Projects" className={styles.arrow}>
+        <MdOutlineDoubleArrow className={styles.arrow}/>
+      </NavLink>            
       <br />
       <br />
       <br />

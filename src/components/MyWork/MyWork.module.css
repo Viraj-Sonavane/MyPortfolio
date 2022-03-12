@@ -2,6 +2,47 @@
     
 }
 
+.icon1{
+    font-size: 30px;
+    color: rgb(252, 250, 248);
+    margin-left: 1rem;
+}
+
+.icon1:hover{
+    color: rgb(3, 250, 250);
+}
+
+.icon2{
+    font-size: 30px;
+    color: rgb(251, 155, 0);
+    margin-left: 1rem;
+}
+
+.icon2:hover{
+    color: rgb(3, 250, 250);
+}
+
+.arrow:hover{
+    color: red;
+}
+
+.arrow{
+    display: flex;
+    justify-content: end;
+    padding-top: 0px;
+    color: #939899;
+    font-size: 3vw;
+    animation: 1s linear infinite alternate bounce1;
+    margin-top: 0.2vw;
+}
+
+@keyframes bounce1 {
+    0%   { transform: scale(1,1)    translateX(5px); }
+    100% { transform: scale(1,1)    translateX(-5px); }
+}
+
+
+
 .header:hover{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
