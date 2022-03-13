@@ -7,14 +7,14 @@ import N3 from "../../../Images/N3.png";
 import N4 from "../../../Images/N4.png";
 import { motion } from "framer-motion";
 import { BiRightArrow } from "react-icons/bi";
-
+import { GrClose } from "react-icons/gr";
 const NoteTaker = () => (
   <div className={styles.NoteTaker}>
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 0.5 },
-        opacity: 0.9,
+        transition: { duration: 1 },
+        opacity: 0.7,
       }}
       data-toggle="modal"
       data-target="#P3"
@@ -91,8 +91,9 @@ const NoteTaker = () => (
                       textAlign: "justify",
                     }}
                   >
-                    Created a note taking app using ReactJS and GraphQL. Deployed the application
-                    on AWS Amplify using github CI/CD pipeline.  
+                    Created a note taking app using ReactJS and GraphQL.
+                    Deployed the application on AWS Amplify using github CI/CD
+                    pipeline.
                   </p>
                 </div>
                 <div
@@ -196,6 +197,13 @@ const NoteTaker = () => (
               src={N4}
               alt=""
             ></img>
+          </div>
+          <div className={styles.crossicon}>
+            <GrClose
+              className={styles.crossicon}
+              data-dismiss="modal"
+              aria-label="Close"
+            />
           </div>
         </div>
       </div>

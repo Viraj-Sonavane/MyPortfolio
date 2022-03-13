@@ -26,7 +26,7 @@ const MySkills = (props) => {
           <motion.div
             className="card"
             style={{
-              backgroundColor: "aqua",
+              backgroundColor: "transparent",
               border: "1.25px solid aqua",
               width: "100%",
             }}
@@ -63,7 +63,7 @@ const MySkills = (props) => {
           <motion.div
             className="card"
             style={{
-              backgroundColor: "aqua",
+              backgroundColor: "transparent",
               border: "1.25px solid aqua",
               width: "100%",
             }}
@@ -104,7 +104,7 @@ const MySkills = (props) => {
           <motion.div
             className="card"
             style={{
-              backgroundColor: "aqua",
+              backgroundColor: "transparent",
               border: "1.25px solid aqua",
               width: "100%",
             }}
@@ -139,7 +139,7 @@ const MySkills = (props) => {
           <motion.div
             className="card"
             style={{
-              backgroundColor: "aqua",
+              backgroundColor: "transparent",
               border: "1.25px solid aqua",
               width: "100%",
             }}
@@ -171,7 +171,7 @@ const MySkills = (props) => {
           <motion.div
             className="card"
             style={{
-              backgroundColor: "aqua",
+              backgroundColor: "transparent",
               border: "1.25px solid aqua",
               width: "100%",
             }}

@@ -12,14 +12,15 @@ import S8 from "../../../Images/S8.png";
 import S9 from "../../../Images/S9.png";
 import { motion } from "framer-motion";
 import { BiRightArrow } from "react-icons/bi";
+import { GrClose } from "react-icons/gr";
 
 const COVID = () => (
   <div className={styles.COVID}>
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 0.5 },
-        opacity: 0.9,
+        transition: { duration: 1 },
+        opacity: 0.7,
       }}
       data-toggle="modal"
       data-target="#P1"
@@ -42,7 +43,7 @@ const COVID = () => (
             backgroundColor: "rgb(196 249 249)",
             border: "0.2vw solid red",
           }}
-          >
+        >
           <div
             class="modal-header"
             style={{
@@ -50,7 +51,7 @@ const COVID = () => (
               display: "flex",
               borderRadius: "0px",
             }}
-            >
+          >
             <h5
               class="modal-title"
               id="exampleModalLongTitle"
@@ -255,6 +256,13 @@ const COVID = () => (
               src={S9}
               alt=""
             ></img>
+          </div>
+          <div className={styles.crossicon}>
+            <GrClose
+              className={styles.crossicon}
+              data-dismiss="modal"
+              aria-label="Close"
+            />
           </div>
         </div>
       </div>

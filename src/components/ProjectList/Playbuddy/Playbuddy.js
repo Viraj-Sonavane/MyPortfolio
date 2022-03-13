@@ -11,14 +11,14 @@ import P7 from "../../../Images/P7.png";
 import P8 from "../../../Images/P8.png";
 import { motion } from "framer-motion";
 import { BiRightArrow } from "react-icons/bi";
-
+import { GrClose } from "react-icons/gr";
 const Playbuddy = () => (
   <div className={styles.Playbuddy}>
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 0.5 },
-        opacity: 0.9,
+        transition: { duration: 1 },
+        opacity: 0.7,
       }}
       data-toggle="modal"
       data-target="#P5"
@@ -95,10 +95,12 @@ const Playbuddy = () => (
                       textAlign: "justify",
                     }}
                   >
-                  Created a web application to find a game or hobby buddies around the user by 
-                  creating public groups that showcases current game or session in play with its
-                  location and allows other users to join these groups or create new groups by using 
-                  the app. Used React, Material-UI, HTML5 and CSS3 for front end.      
+                    Created a web application to find a game or hobby buddies
+                    around the user by creating public groups that showcases
+                    current game or session in play with its location and allows
+                    other users to join these groups or create new groups by
+                    using the app. Used React, Material-UI, HTML5 and CSS3 for
+                    front end.
                   </p>
                 </div>
                 <div
@@ -264,6 +266,13 @@ const Playbuddy = () => (
               src={P8}
               alt=""
             ></img>
+          </div>
+          <div className={styles.crossicon}>
+            <GrClose
+              className={styles.crossicon}
+              data-dismiss="modal"
+              aria-label="Close"
+            />
           </div>
         </div>
       </div>

@@ -8,14 +8,14 @@ import W4 from "../../../Images/W4.png";
 import W5 from "../../../Images/W5.png";
 import { motion } from "framer-motion";
 import { BiRightArrow } from "react-icons/bi";
-
+import { GrClose } from "react-icons/gr";
 const Wanderlust = () => (
   <div className={styles.Wanderlust}>
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 0.5 },
-        opacity: 0.9,
+        transition: { duration: 1 },
+        opacity: 0.7,
       }}
       data-toggle="modal"
       data-target="#P2"
@@ -92,12 +92,15 @@ const Wanderlust = () => (
                       textAlign: "justify",
                     }}
                   >
-                    Created a web application that recommends real time famous travel location, 
-                    hotels with review and travel vlog according to user's current location and
-                    the weather conditions. For real time forecast GoogleAPI's are used and for 
-                    authentication Auth0 is used. Implemented the front-end of the application using 
-                    Angular, TypeScript,JavaScript and Bootstrap. For backend Express and MongoDB is used.
-                    Deployed the application on Azure using dockerhub and github CI/CD pipeline.
+                    Created a web application that recommends real time famous
+                    travel location, hotels with review and travel vlog
+                    according to user's current location and the weather
+                    conditions. For real time forecast GoogleAPI's are used and
+                    for authentication Auth0 is used. Implemented the front-end
+                    of the application using Angular, TypeScript,JavaScript and
+                    Bootstrap. For backend Express and MongoDB is used. Deployed
+                    the application on Azure using dockerhub and github CI/CD
+                    pipeline.
                   </p>
                 </div>
                 <div
@@ -242,6 +245,13 @@ const Wanderlust = () => (
               src={W5}
               alt=""
             ></img>
+          </div>
+          <div className={styles.crossicon}>
+            <GrClose
+              className={styles.crossicon}
+              data-dismiss="modal"
+              aria-label="Close"
+            />
           </div>
         </div>
       </div>
