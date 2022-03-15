@@ -15,7 +15,7 @@ const TradeSpot = () => (
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 1 },
+        transition: { duration: 0.3},
         opacity: 0.7,
       }}
       data-toggle="modal"

@@ -19,7 +19,7 @@ const COVID = () => (
     <motion.img
       whileHover={{
         scale: 0.98,
-        transition: { duration: 1 },
+        transition: { duration: 0.3 },
         opacity: 0.7,
       }}
       data-toggle="modal"
@@ -27,7 +27,7 @@ const COVID = () => (
       src={S3}
       className={styles.firstpic}
     ></motion.img>
-
+    
     <div
       class="modal fade"
       id="P1"

@@ -90,6 +90,8 @@ const About = () => (
            drag
            whileHover={{ scale: 1.1 }}
            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+           data-toggle
+           data-toggle="tooltip" data-placement="top" title="Drag"
           >
           <div className={styles.content}>
             <div className={styles.front}>

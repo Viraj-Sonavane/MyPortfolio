@@ -47,6 +47,11 @@
     padding: 1vw 1vw;
 }
 
+.active{
+    border-right: 4px solid white;
+    background-color: rgb(223, 233, 235);
+}
+
 .fullink{
     font-size: 1.2vw ;
     display: flex;
@@ -63,15 +68,14 @@
     background-color: rgb(176, 229, 240) ;
 }
 
+
+
 .linktext{
     align-items: center;
     font-weight: bolder;
 }
 
-.active{
-    border-right: 4px solid white;
-    background-color: rgb(223, 233, 235);
-}
+
 
 
 a{
