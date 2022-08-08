@@ -24,7 +24,7 @@ const About = () => (
           <h2 className={styles.data}>
             Hey!! My name is Viraj and I enjoy creating a web application with
             interactive UI. I have completed my Masters in Computer Science from
-            California State University in December 2021. My interest in web
+            California State University Chico in December 2021. My interest in web
             applications started while creating websites for university
             coursework. I like to create web applications with engaging UI,
             experiment with new frameworks and platforms to keep myself updated
