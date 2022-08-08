@@ -26,7 +26,7 @@ const About = () => (
             interactive UI. I have completed my Masters in Computer Science from
             California State University in December 2021. My interest in web
             applications started while creating websites for university
-            coursework. I like to create web applications with engaging UI and
+            coursework. I like to create web applications with engaging UI,
             experiment with new frameworks and platforms to keep myself updated
             with new technologies.{" "}
           </h2>
